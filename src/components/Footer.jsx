@@ -12,7 +12,7 @@ function Footer() {
         </div>
         <div className="footer-column">
           <h3 className="footer-section-title">Links</h3>
-          <a></a>
+          
         </div>
         <div className="footer-column">
           <h3 className="footer-section-title">Follow me</h3>
