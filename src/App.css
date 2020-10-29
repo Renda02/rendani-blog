@@ -133,3 +133,10 @@ font-family: "Roboto",sans-serif;
     padding-bottom: auto;
     height: 70px;
 }
+
+/*Body*/
+.body{
+width: 100%;
+height:300px;
+background:#ECD8D1;
+}
