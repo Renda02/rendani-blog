@@ -19,7 +19,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer__copy">
-        <p>Made with love in Huelva. Copyright @Rendani 2020</p>
+        <p> Copyright @Rendani 2020</p>
       </div>
     </div>
   );
