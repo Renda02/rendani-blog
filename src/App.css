@@ -1,34 +1,88 @@
-#sections-container{
+*{box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Footer*/
+
+.sections__container {
   display: flex;
   justify-content: space-around;
   max-width: 1080px;
 }
 
-.footer-copy{
+.footer__copy {
   width: 1080px;
   display: flex;
-  justify-content:flex-start;
-  background-color: rgba(0,0,0,.32);
+  justify-content: flex-start;
+  background-color: rgba(0, 0, 0, 0.32);
   color: #666;
 }
 
-.footer{
+.footer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  width: 100% ;
+  
+  width: 100%;
   align-items: center;
+  background: #000000;
 }
 
-.footer-column{
+.footer__column {
   width: calc(100% / 3);
 }
 
-.footer-section-title{
-  font-size: 20px;
+h3 {
   font-family: cooperboldbt;
   font-weight: 500;
   color: #f4b995;
-  line-height: 20px;
+}
+
+p {
+  color: #ababab;
+}
+
+/*NavBar*/
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+li, a{
+  font-family: "Questrial",sans-serif;
+  font-weight: 600;
+  font-size:14px ;
+  color: #666666;
+  line-height: 23px;
+  text-decoration: none;
+}
+
+.logo{
+  cursor: pointer;
+}
+
+.nav__list{
+  list-style: none;
+}
+
+.nav__list li{
+  display: inline-block;
+  padding: 0 20px;
 
 }
+
+.nav__list li a{
+  transition: all 0.3s ease-in-out;
+
+}
+
+.nav__list li a:hover{
+  background-color: #F9F9F9;
+}
+
+
+
+
