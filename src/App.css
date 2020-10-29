@@ -1,4 +1,5 @@
-*{box-sizing: border-box;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -11,7 +12,7 @@
 }
 
 .footer__copy {
-  width: 1080px;
+  max-width: 1080px;
   display: flex;
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.32);
@@ -21,7 +22,6 @@
 .footer {
   display: flex;
   flex-direction: column;
-  
   width: 100%;
   align-items: center;
   background: #000000;
@@ -42,47 +42,51 @@ p {
 }
 
 /*NavBar*/
-@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-.header{
+.header {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 30px 10%;
+  width: 100%;
+  background: #ffffff;
+  line-height: 23px;
+  font-weight: 600;
+  max-width: 1200px;
 }
 
-li, a{
-  font-family: "Questrial",sans-serif;
-  font-weight: 600;
-  font-size:14px ;
+li,
+a {
+  font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
+  font-size: 14px;
   color: #666666;
   line-height: 23px;
   text-decoration: none;
 }
 
-.logo{
+.logo {
   cursor: pointer;
+  margin-right: auto;
 }
 
-.nav__list{
+.nav__list {
   list-style: none;
 }
 
-.nav__list li{
+.nav__list li {
   display: inline-block;
-  padding: 0 20px;
-
+  padding: 0 20px 10px 20px;
 }
 
-.nav__list li a{
+.nav__list li a {
   transition: all 0.3s ease-in-out;
-
 }
 
-.nav__list li a:hover{
-  background-color: #F9F9F9;
+.nav__list li a:hover {
+  border-bottom: 2px solid #dd3435;
 }
 
-
-
-
+input {
+  margin-left: 20px;
+}

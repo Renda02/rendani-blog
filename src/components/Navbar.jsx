@@ -7,7 +7,7 @@ function Navbar() {
             <ul className="nav__list">
                 <li><a href="/">Home</a></li>
                 <li><a href="/">About</a> </li>
-                <li><a  href="/">Contact</a></li>
+                <li><a  href="/" className ="navbar__contact">Contact</a></li>
                 
             </ul></nav>
             <input type="search"></input>

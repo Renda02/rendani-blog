@@ -15,7 +15,7 @@ function Footer() {
           
         </div>
         <div className="footer__column">
-          <h3 className="footer__section-title">Follow me</h3>
+          <h3 className="footer__section-title">Follow Rendani</h3>
         </div>
       </div>
       <div className="footer__copy">
