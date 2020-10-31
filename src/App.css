@@ -9,74 +9,82 @@
   display: flex;
   justify-content: space-around;
   max-width: 1080px;
+  
 }
 
 .footer__copy {
-padding: 20px;
+
+  padding: 10px;
   display: flex;
   justify-content: flex-start;
-  background-color:#F4EEE6;
-  color:#000000;
-  font-size: 20px;
-  font-family:  'Montserrat', sans-serif;
+  background-color: #f4eee6;
+  color: #000000;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   line-height: 21px;
   width: 100%;
-  
+}
+
+.footer__follow li {
+  display: block;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
-  
+align-items: center;
   background: #000000;
 }
 
-
-
 .footer__column {
   width: calc(100% / 3);
+  
 }
 
-h3 {
+
+.footer h3 {
   font-family: cooperboldbt;
   font-weight: 500;
   color: #f4b995;
+  padding: 15px;
 }
 
-p {
+.footer p {
   color: #ababab;
 }
+
+
 
 /*NavBar*/
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-
-.navbar{
+.navbar {
   position: fixed;
   z-index: 5;
   width: 100%;
-  padding: 20px ;
-  background: #F4F3F5 ;
-   
+  padding: 20px;
+  background: #f4f3f5;
 }
 
-.navbar .nav__list{
+.navbar .nav__list {
   display: inline-flex;
 }
 
-.navbar{
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.nav__list li{
+.nav__list li {
   list-style: none;
-  
-  }
+}
 
 .logo {
   cursor: pointer;
@@ -85,22 +93,22 @@ p {
   font-weight: 500;
 }
 
-.nav__list li a {font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
+.nav__list li a {
+  font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   line-height: 23px;
   text-decoration: none;
   font-weight: 400;
   margin-right: 20px;
   transition: all 0.3s ease;
-  }
+}
 
 .nav__list li a:hover {
   border-bottom: 2px solid #dd3435;
 }
 
-
-@media(max-width:900px){
-  .navbar .nav__list{
+@media (max-width: 900px) {
+  .navbar .nav__list {
     display: block;
     position: fixed;
     top: 0;
@@ -108,38 +116,23 @@ p {
     width: 100%;
     height: 100vh;
     max-width: 400px;
-    background: #F4F3F5 ;
+    background: #f4f3f5;
     display: block;
     padding: 40px 0;
     text-align: center;
-
   }
-  .navbar.show .nav__list{
-    left:0%
+  .navbar.show .nav__list {
+    left: 0%;
   }
-  .navbar .nav__list li{
-    margin-top:65px;
+  .navbar .nav__list li {
+    margin-top: 65px;
   }
-  .navbar .nav__list li a{
-    font-size:23px ;
+  .navbar .nav__list li a {
+    font-size: 23px;
     margin-left: -100px;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55); ;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-
 }
-
-
-
-
-  
-
-
-
-
-
-
-
-
 
 /*TopSection*/
 .main {
@@ -149,85 +142,74 @@ p {
   margin-left: auto;
   margin-right: auto;
   height: 665px;
-  background-color:#F4F3F5;
-padding:1 rem ;}
+  background-color: #f4f3f5;
+  padding: 1 rem;
+}
 
-.intro{
+.intro {
   text-align: center;
   line-height: 24px;
   padding-top: 200px;
   padding-bottom: 175px;
-  display:flex-start;
+  display: flex-start;
 }
 
-img{
+img {
   border: 5px;
-  margin: auto ;
-max-width: 350px;
-display: block;
-
-
+  margin: auto;
+  max-width: 350px;
+  display: block;
 }
 
-h1{
+.intro h1 {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.title{
-font-family: "Roboto",sans-serif;
-    color: #ee5f5f!important;
-    font-size: 40px;
-    text-align: center;
-    padding-bottom: auto;
-    height: 70px;
+.title {
+  font-family: "Roboto", sans-serif;
+  color: #ee5f5f !important;
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: auto;
+  height: 70px;
 }
 
 /*Body*/
-.body{
-width: 100%;
-height:500px;
-background:#F4EEE6;
-
-}
-
-/*Body*/
-.body{
+.body {
+  width: 100%;
+  height: 500px;
+  background: #f4eee6;
   display: block;
   text-align: center;
-
 }
 
-.body__heading{
+/*Body*/
+
+.body__heading {
   font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   color: #000000;
-  padding:40px ;
-  
-  
+  padding: 40px;
 }
 
-.body_row{
+.body_row {
   display: flex;
   justify-content: space-between;
-   padding: 2px 16px;
-    
+  padding: 2px 16px;
 }
 
 .card__a,
 .card__b,
-.card__c{
- box-shadow: 10px 4px 10px 4px rgba(0,0,0,0.1);
+.card__c {
+  box-shadow: 10px 4px 10px 4px rgba(0, 0, 0, 0.1);
   transition: 0.3s;
   padding: 20px 0 25px 0;
 }
 
-.card__title{
+.card__title {
   font-size: 20px;
   padding: 10px;
-
 }
-
-

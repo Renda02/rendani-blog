@@ -1,4 +1,8 @@
+
+
 import { ExternalLink } from 'react-external-link';
+import { AiFillGithub, AiFillTwitterCircle, AiFillLinkedin,AiFillMail } from "react-icons/ai"
+
 
 function Footer() {
   return (
@@ -13,15 +17,18 @@ function Footer() {
         </div>
         <div className="footer__column">
           <h3 className="footer__section-title">Links</h3>
-          
+          <div>
+
+          </div>
         </div>
         <div className="footer__column">
           <h3 className="footer__section-title">Follow Rendani</h3>
-          <div> <ul>
-          <li><ExternalLink href=" mailto:rluvhengo2@gmail.com">Mail</ExternalLink></li>
-          <li><ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">LimkedIn</ExternalLink></li>
-          <li><ExternalLink href="https://github.com/Renda02">Git</ExternalLink></li>
-          <li><ExternalLink href="https://twitter.com/rendani18824096/">Twitter</ExternalLink></li>
+          <div className="footer__follow">
+            <ul >
+              <li><ExternalLink href=" mailto:rluvhengo2@gmail.com"><AiFillMail size={24} /></ExternalLink></li>
+          <li><ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/"><AiFillLinkedin size={24} /></ExternalLink></li>
+          <li><ExternalLink href="https://github.com/Renda02"><AiFillGithub size={24} /></ExternalLink ></li>
+          <li><ExternalLink href="https://twitter.com/rendani18824096/"><AiFillTwitterCircle size={24} /></ExternalLink></li>
           </ul></div>
          
         </div>
@@ -34,3 +41,5 @@ function Footer() {
 }
 
 export default Footer;
+
+
