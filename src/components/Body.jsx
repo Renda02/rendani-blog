@@ -13,8 +13,10 @@ function Body() {
         <h2> Who am I?</h2>
         <h3>
           {" "}
-          My global outlook and eagerness to learn will help in rapid growth of
-          your company.{" "}
+          I come from manufacturing and construction industry where
+          quality-work,continuous improvement and meeting all customer's
+          requirements is a priority. But in the end, my fascination with tech
+          inspired me take the leap.{" "}
         </h3>
       </div>
       <div className="body_row">
@@ -47,7 +49,8 @@ function Body() {
           </p>
         </div>
       </div>
-   <Main/>
+      <input type="submit" placeholder="Learn more" />
+      <Main />
     </div>
   );
 }

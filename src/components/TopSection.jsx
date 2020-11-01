@@ -1,5 +1,5 @@
 import Typed from 'react-typed';
-import avatar from "../images/profile.JPG"
+import avatar from "../images/image.JPG"
 
 function TopSection() {
     return (

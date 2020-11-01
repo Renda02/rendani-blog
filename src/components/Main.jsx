@@ -14,25 +14,28 @@ const exampleTheme = {
 };
 
     return (
-        <div className="main">
-            <div className="main__wrapper">
-                <div className="main__heading">
-          <h2> What have I been to</h2>
-          <h3>
-            I come from manufacturing and construstion industry where
-            quality-work,continuous improvement and meeting all customer's
-            requirements is a priority. But in the end, my fascination with tech
-            inspired me take the leap.
-          </h3>
-          <br />
+      <div className="main">
+        <div className="main__wrapper">
+          <div className="main__heading">
+            <h2> What have I been to</h2>
+            <p>
+              My global outlook and eagerness to learn will help in rapid growth
+              of your company
+            </p>
+
+            <br />
+          </div>
+          <h4>GitHub Calendar</h4>
+          <div className="calendar">
+            <GitHubCalendar
+              username="renda02"
+              theme={exampleTheme}
+              fontSize={18}
+            >
+              <ReactTooltip delayShow={50} html />
+            </GitHubCalendar>
+          </div>
         </div>
-        <div className="calendar">
-          <h3>GitHub Calendar</h3>
-          <GitHubCalendar username="renda02" theme={exampleTheme} fontSize={18}>
-            <ReactTooltip delayShow={50} html />
-          </GitHubCalendar>
-        </div></div>
-        
       </div>
     );
 }
