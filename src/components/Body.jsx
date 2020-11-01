@@ -2,6 +2,7 @@ import code from "../images/code.svg";
 import teams from "../images/adapt.svg";
 import goal from "../images/goal.svg";
 import TopSection from "./TopSection";
+import Main from "./Main";
 
 function Body() {
   return (
@@ -17,7 +18,7 @@ function Body() {
       </div>
       <div className="body_row">
         <div className="card__a">
-          <img src={goal} width={90} alt="coding" />
+          <img src={goal} width={90} alt="coding" className="icon__card" />
           <h4 className="card__title">Goal Oriented</h4>
           <br />
 
@@ -27,7 +28,7 @@ function Body() {
           </p>
         </div>
         <div className="card__b">
-          <img src={code} width={90} alt="coding" />
+          <img src={code} width={90} alt="coding" className="icon__card" />
           <h4 className="card__title">I code,too</h4>
           <br />
           <p>
@@ -36,7 +37,7 @@ function Body() {
           </p>
         </div>
         <div className="card__c">
-          <img src={teams} width={90} alt="coding" />
+          <img src={teams} width={90} alt="coding" className="icon__card" />
           <h4 className="card__title">Easily Adaptive</h4>
           <br />
           <p>
@@ -45,6 +46,7 @@ function Body() {
           </p>
         </div>
       </div>
+      <Main />
     </div>
   );
 }

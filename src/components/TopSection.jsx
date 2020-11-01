@@ -3,7 +3,7 @@ import avatar from "../images/profile.JPG"
 
 function TopSection() {
     return (
-        <div className="main">
+        <div className="top__section">
             <div className="intro">
                 <p>Hello , I am</p>
                 <h1>Rendani Luvhengo</h1>

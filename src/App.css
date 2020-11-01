@@ -142,7 +142,7 @@
 }
 
 /*TopSection*/
-.main {
+.top__section{
   display: flex;
   width: 1080px;
   justify-content: space-between;
@@ -176,7 +176,7 @@ img {
 
 .title {
   font-family: "Roboto", sans-serif;
-  color: #ee5f5f !important;
+  color:#e6739f;
   font-size: 40px;
   text-align: center;
   padding-bottom: auto;
@@ -209,6 +209,7 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
+  font-family: "cooperboldbt", serif;
 }
 
 .body_row {
@@ -233,5 +234,17 @@ img {
 
 .card__title {
   font-size: 20px;
-  padding: 10px;
+  text-align: center;
+}
+
+.icon__card{
+      width: 70px;
+    height: 70px;
+    border-radius: 400px;
+    margin-bottom: 10px;
+}
+
+.main{
+   max-width: 1080px;
+  background: #f4f3f5 ;
 }
