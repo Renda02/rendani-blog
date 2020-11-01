@@ -14,8 +14,9 @@ const exampleTheme = {
 };
 
     return (
-      <div className="main">
-        <div className="main__heading">
+        <div className="main">
+            <div className="main__wrapper">
+                <div className="main__heading">
           <h2> What have I been to</h2>
           <h3>
             I come from manufacturing and construstion industry where
@@ -27,10 +28,11 @@ const exampleTheme = {
         </div>
         <div className="calendar">
           <h3>GitHub Calendar</h3>
-          <GitHubCalendar username="renda02" theme={exampleTheme}>
+          <GitHubCalendar username="renda02" theme={exampleTheme} fontSize={18}>
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
-        </div>
+        </div></div>
+        
       </div>
     );
 }

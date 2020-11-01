@@ -4,6 +4,7 @@ import goal from "../images/goal.svg";
 import TopSection from "./TopSection";
 import Main from "./Main";
 
+
 function Body() {
   return (
     <div className="body">
@@ -46,7 +47,7 @@ function Body() {
           </p>
         </div>
       </div>
-      <Main />
+   <Main/>
     </div>
   );
 }
