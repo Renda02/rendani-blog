@@ -6,9 +6,11 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 
+
 function Footer() {
   return (
     <div className="footer">
+     
       <div className="sections__container">
         <div className="footer___column">
           <h3 className="footer__section__title">Rendani Luvhengo</h3>
