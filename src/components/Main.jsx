@@ -3,7 +3,7 @@ import ReactTooltip from "react-tooltip";
 
 function Main() {
 
-const exampleTheme = {
+/*const exampleTheme = {
   background: "transparent",
   text: "#000",
   grade4: "hsl(338, 78%, 30%)",
@@ -11,7 +11,7 @@ const exampleTheme = {
   grade2: "hsl(338, 78%, 58%)",
   grade1: "hsl(338, 78%, 72%)",
   grade0: "#eee",
-};
+};*/
 
     return (
       <div className="main">
@@ -29,8 +29,10 @@ const exampleTheme = {
           <div className="calendar">
             <GitHubCalendar
               username="renda02"
-              theme={exampleTheme}
+             /*</div> theme={exampleTheme}*/
               fontSize={18}
+              fullYear={false}
+
             >
               <ReactTooltip delayShow={50} html />
             </GitHubCalendar>

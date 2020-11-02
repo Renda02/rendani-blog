@@ -268,6 +268,29 @@ img {
   align-items: flex-start;
 }
 
+/*Main*/
+
+.calendar {
+    margin-bottom: 10px;
+       margin-top: 10px;
+       padding: 20px;  
+}
+
+   .btn__body{     background: #000000;
+    color: #fff;
+    border: none;
+    padding: 0 5%;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 44px;
+    
+    font-family: " cooperboldbt",sans-serif;
+    font-weight: 400px; 
+    cursor: pointer;
+     }
+  
+
 /*Form*/
 .form{
    width: 100%;

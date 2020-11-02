@@ -49,7 +49,7 @@ function Body() {
           </p>
         </div>
       </div>
-      <input type="submit" placeholder="Learn more" />
+      <button type="submit" placeholder="Learn more" className="btn__body">Learn More</button>
       <Main />
     </div>
   );
