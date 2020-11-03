@@ -3,6 +3,7 @@ import teams from "../images/adapt.svg";
 import goal from "../images/goal.svg";
 import TopSection from "./TopSection";
 import Main from "./Main";
+import BottomSection from "./BottomSection";
 
 
 function Body() {
@@ -51,6 +52,7 @@ function Body() {
       </div>
       <button type="submit" placeholder="Learn more" className="btn__body">Learn More</button>
       <Main />
+      <BottomSection />
     </div>
   );
 }

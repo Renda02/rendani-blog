@@ -18,14 +18,13 @@ function Main() {
         <div className="main__wrapper">
           <div className="main__heading">
             <h2> What have I been to</h2>
-            <p>
-              My global outlook and eagerness to learn will help in rapid growth
-              of your company
-            </p>
+            <h3>
+              Now that I am pursuing web development as my career, I have never stop learning and improving my technical knowledge by getting into coding, following content that insipire me and networking. 
+            </h3>
 
             <br />
           </div>
-          <h4>GitHub Calendar</h4>
+          <h4>Check out my GitHub Calendar:</h4>
           <div className="calendar">
             <GitHubCalendar
               username="renda02"
@@ -37,7 +36,9 @@ function Main() {
               <ReactTooltip delayShow={50} html />
             </GitHubCalendar>
           </div>
+     
         </div>
+        
       </div>
     );
 }

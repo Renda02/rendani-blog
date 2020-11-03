@@ -6,22 +6,16 @@ function Contact() {
         <div className="input__name">
           <input type="text" />
           <label>First Name</label>
-        </div>
-        <div className="input__name">
           <input type="text" />
           <label>Last Name</label>
+        </div>
           <div className="input__data">
-            <input type="text" />
+            <input type="email" />
             <label>Email Adress</label>
           </div>
-          <div className="input__data">
-            <input type="text" />
-            <label>Company's Name</label>
-          </div>
-         
-        </div>
-              <br />
-              <input type="submit"/>
+       
+        <br />
+        <input type="submit" />
       </form>
     </div>
   );
