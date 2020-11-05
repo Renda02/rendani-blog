@@ -5,65 +5,6 @@
 }
 /*Footer*/
 
-.sections__container {
-  display: flex;
-  justify-content: space-around;
-  max-width: 1080px;
-  width: 100%;
-}
-
-.footer__copy {
-  padding: 10px;
-  display: flex;
-  justify-content: flex-start;
-  background-color: #f4eee6;
-  color: #000000;
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  line-height: 21px;
-  width: 100%;
-}
-
-.footer__follow li {
-  display: block;
-  flex-direction: column;
-  text-decoration: none;
-  justify-content: space-between;
-}
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  background: #000000;
-  min-height: 300px;
-}
-
-.footer__column {
-  width: calc(100% / 3);
-}
-
-.social__icons {
-  display: flex;
-  padding: 0 10px 0 15px;
-  
-}
-
-.footer__section__title {
-  font-family: cooperboldbt;
-  font-weight: 500;
-  color: #f4b995;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
-
-.footer p {
-  color: #ababab;
-}
-
 /*NavBar*/
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
@@ -143,37 +84,12 @@
 }
 
 /*TopSection*/
-.top__section {
-  display: flex;
-  width: 1080px;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  height: 665px;
-  /*background-color: #f4f3f5;*/
-  padding: 1 rem;
-}
 
 img {
   border: 5px;
   margin: auto;
   max-width: 350px;
   display: block;
-}
-
-.intro h1 {
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 10px;
-}
-
-.title {
-  font-family: "Roboto", sans-serif;
-  color: #e6739f;
-  font-size: 40px;
-  text-align: center;
-  padding-bottom: auto;
-  height: 70px;
 }
 
 /*Body*/
@@ -291,8 +207,6 @@ img {
   align-items: center;
   padding-top: 40px;
   padding-bottom: 40px;
-
-  
 }
 
 .form__heading {
@@ -303,14 +217,14 @@ img {
   text-align: center;
 }
 
-.form .form__row{
+.form .form__row {
   position: relative;
   width: 50%;
   display: grid;
-  grid-template-columns: repeat(autofit,minmax(300px,1fr));
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
 }
 
-.form .form__row .col{
+.form .form__row .col {
   position: relative;
   width: 80%;
   padding: 0 10px;
@@ -318,14 +232,14 @@ img {
   transition: 0.5s;
 }
 
-.form .form__row .form__input{
+.form .form__row .form__input {
   position: relative;
   width: 100%;
   height: 40px;
-color:#E6739F;
+  color: #e6739f;
 }
 
-.form .form__row .form__input input{
+.form .form__row .form__input input {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -337,7 +251,7 @@ color:#E6739F;
   padding: 0 10px;
 }
 
-.form .form__row .form__input .text{
+.form .form__row .form__input .text {
   position: absolute;
   top: 0;
   left: 0;
@@ -350,12 +264,12 @@ color:#E6739F;
 }
 
 .form .form__row .form__input input:focus + .text,
-.form .form__row .form__input input:valid + .text{
-top: -35px;
-left: -10px;
+.form .form__row .form__input input:valid + .text {
+  top: -35px;
+  left: -10px;
 }
 
-.form .form__row .form__input .line{
+.form .form__row .form__input .line {
   position: absolute;
   bottom: 0;
   display: block;
