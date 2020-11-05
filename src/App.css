@@ -8,50 +8,6 @@
 /*NavBar*/
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
-.navbar {
-  width: 100%;
-  padding: 20px;
-  background: #f4f3f5;
-  display: flex;
-  justify-content: space-between;
-  max-width: 1080px;
-}
-
-.header {
-  position: fixed;
-  top: 0px;
-  z-index: 5;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background: #f4f3f5;
-}
-
-.navbar .nav__list {
-  display: inline-flex;
-}
-
-.nav__list li {
-  list-style: none;
-}
-
-.logo {
-  cursor: pointer;
-  margin-right: 20px;
-  font-size: 30px;
-  font-weight: 500;
-}
-
-.nav__list li a {
-  font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
-  font-size: 18px;
-  line-height: 23px;
-  text-decoration: none;
-  font-weight: 400;
-  margin-right: 20px;
-  transition: all 0.3s ease;
-}
-
 .nav__list li a:hover {
   border-bottom: 2px solid #dd3435;
 }
@@ -94,39 +50,10 @@ img {
 
 /*Body*/
 
-.body {
-  width: 100%;
-  /*height: 500px;*/
-  /*background: #f4eee6;*/
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 75px;
-}
 
-/*Body*/
 
-.body__heading {
-  max-width: 1080px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 20px;
-  font-weight: 500;
-  color: #000000;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 100%;
-  font-family: "cooperboldbt", serif;
-}
 
-.body_row {
-  max-width: 1080px;
-  display: flex;
-  justify-content: space-between;
-  padding: 2px 16px;
-}
+
 
 .card__a,
 .card__b,
@@ -155,11 +82,7 @@ img {
 
 /*Main*/
 
-
-
 /*Main*/
-
-
 
 .btn__body {
   background: #000000;

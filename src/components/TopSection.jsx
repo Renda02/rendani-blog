@@ -32,14 +32,25 @@ const Title = styled.p`
 const Name = styled.h1`
   font-size: 40px;
   font-weight: 500;
-  margin-bottom: 10px;
+  
+`;
+
+const Greetings = styled.p`
+font-size:20px;
+`;
+
+const About = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 `;
 
 function TopSection() {
   return (
     <Body>
       <IntroContainer>
-        <p>Hello , I am</p>
+        <About>
+          <Greetings>Hello , I am</Greetings>
         <Name>Rendani Luvhengo</Name>
         <br />
         <Title>
@@ -48,7 +59,9 @@ function TopSection() {
             typeSpeed={30}
             showCursor={false}
           />
-        </Title>
+          </Title>
+        </About>
+       
       </IntroContainer>
       <img src={avatar} alt="logo" />
     </Body>
