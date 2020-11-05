@@ -34,9 +34,13 @@ const Heading = styled.div`
   font-size: 20px;
   font-weight: 500;
   color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%;
-  font-family: "cooperboldbt", serif;
+  font-family: "cooperboldbt", serif; ;
 `;
+
+
 function BottomSection() {
   return (
     <MainSection>

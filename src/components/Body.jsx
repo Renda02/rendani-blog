@@ -50,7 +50,7 @@ function Body() {
           </p>
         </div>
       </div>
-      <button type="submit" placeholder="Learn more" className="btn__body">Learn More</button>
+      <button type="submit" value="Learn more" className="btn__body"></button>
       <Main />
       <BottomSection />
     </div>

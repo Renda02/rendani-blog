@@ -1,8 +1,49 @@
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
+import styled from "styled-components";
 
+const Container = styled.div`
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  background: #f4f3f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+`;
 
- const themeColor ={background: "transparent",
+const MainWrapper = styled.div`
+  max-width: 1080px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+`;
+
+const Heading = styled.div`
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 100%;
+  font-family: "cooperboldbt", serif;
+`;
+
+const Calendar = styled.div`
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding: 20px;
+`;
+
+const themeColor = {
+  background: "transparent",
   text: "#000",
   grade4: "hsl(338, 78%, 30%)",
   grade3: "hsl(338, 78%, 44%)",
@@ -11,31 +52,20 @@ import ReactTooltip from "react-tooltip";
   grade0: "#eee",
 };
 function Main() {
-  /*const exampleTheme = {
-  background: "transparent",
-  text: "#000",
-  grade4: "hsl(338, 78%, 30%)",
-  grade3: "hsl(338, 78%, 44%)",
-  grade2: "hsl(338, 78%, 58%)",
-  grade1: "hsl(338, 78%, 72%)",
-  grade0: "#eee",
-};*/
-
   return (
-    <div className="main">
-      <div className="main__wrapper">
-        <div className="main__heading">
+    <Container>
+      <MainWrapper>
+        <Heading>
           <h2> What have I been to</h2>
           <h3>
             Now that I am pursuing web development as my career, I have never
             stop learning and improving my technical knowledge by getting into
             coding, following content that insipire me and networking.
           </h3>
-
           <br />
-        </div>
+        </Heading>
         <h4>Check out my GitHub Calendar:</h4>
-        <div className="calendar">
+        <Calendar>
           <GitHubCalendar
             username="renda02"
             theme={themeColor}
@@ -44,9 +74,9 @@ function Main() {
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
-        </div>
-      </div>
-    </div>
+        </Calendar>
+      </MainWrapper>
+    </Container>
   );
 }
 
