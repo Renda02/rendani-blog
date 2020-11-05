@@ -8,56 +8,6 @@ import {
 
 import styled from "styled-components";
 
-function Footer() {
-  return (
-    <Main>
-      <Cointaner>
-        <FooterColumn>
-          <SectionTitle>Rendani Luvhengo</SectionTitle>
-          <Paragraph>Welcome to my personal website. </Paragraph>
-        </FooterColumn>
-        <FooterColumn>
-          <SectionTitle>Links</SectionTitle>
-          <div></div>
-        </FooterColumn>
-        <FooterColumn>
-          <SectionTitle>Follow Rendani</SectionTitle>
-          <div className="footer__follow">
-            <SocialLink>
-              <Links>
-                <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                  <AiFillMail size={24} />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
-                  <AiFillLinkedin size={24} />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://github.com/Renda02">
-                  <AiFillGithub size={24} />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://twitter.com/rendani18824096/">
-                  <AiFillTwitterCircle size={24} />
-                </ExternalLink>
-              </Links>
-            </SocialLink>
-          </div>
-        </FooterColumn>
-      </Cointaner>
-      <SubFooter>
-        <Paragraph> Copyright @Rendani 2020</Paragraph>
-      </SubFooter>
-    </Main>
-  );
-}
-
-export default Footer;
-
-
 const Main = styled.div`
   display: flex;
   flex-direction: column;
@@ -114,3 +64,52 @@ const Links = styled.li`
   text-decoration: none;
   justify-content: space-between;
 `;
+function Footer() {
+  return (
+    <Main>
+      <Cointaner>
+        <FooterColumn>
+          <SectionTitle>Rendani Luvhengo</SectionTitle>
+          <Paragraph>Welcome to my personal website. </Paragraph>
+        </FooterColumn>
+        <FooterColumn>
+          <SectionTitle>Links</SectionTitle>
+          <div></div>
+        </FooterColumn>
+        <FooterColumn>
+          <SectionTitle>Follow Rendani</SectionTitle>
+          <div className="footer__follow">
+            <SocialLink>
+              <Links>
+                <ExternalLink href=" mailto:rluvhengo2@gmail.com">
+                  <AiFillMail size={24} />
+                </ExternalLink>
+              </Links>
+              <Links>
+                <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
+                  <AiFillLinkedin size={24} />
+                </ExternalLink>
+              </Links>
+              <Links>
+                <ExternalLink href="https://github.com/Renda02">
+                  <AiFillGithub size={24} />
+                </ExternalLink>
+              </Links>
+              <Links>
+                <ExternalLink href="https://twitter.com/rendani18824096/">
+                  <AiFillTwitterCircle size={24} />
+                </ExternalLink>
+              </Links>
+            </SocialLink>
+          </div>
+        </FooterColumn>
+      </Cointaner>
+      <SubFooter>
+        <Paragraph> Copyright @Rendani 2020</Paragraph>
+      </SubFooter>
+    </Main>
+  );
+}
+
+export default Footer;
+
