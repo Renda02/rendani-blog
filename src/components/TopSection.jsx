@@ -23,11 +23,12 @@ const Body = styled.div`
 
 const Title = styled.p`
   font-family: "Roboto", sans-serif;
-  color: #e6739f;
+  color: #e39aa4;
   font-size: 40px;
   text-align: center;
   padding-bottom: auto;
-  height: 70px;`
+  height: 70px;
+`;
 
 const Name = styled.h1`
   font-size: 40px;

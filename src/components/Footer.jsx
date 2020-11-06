@@ -32,7 +32,7 @@ const FooterColumn = styled.div`
 const SectionTitle = styled.h3`
   font-family: cooperboldbt;
   font-weight: 500;
-  color: #f4b995;
+  color: #e39aa4;
   padding-top: 15px;
   padding-bottom: 15px;
 `;
@@ -49,7 +49,7 @@ const SubFooter = styled.div`
   padding: 10px;
   display: flex;
   justify-content: flex-start;
-  background-color: #f4eee6;
+  background-color: #f4f3f5;
   color: #000000;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -63,6 +63,8 @@ const Links = styled.li`
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
+  color:#fff;
+  cursor: pointer;
 `;
 function Footer() {
   return (
@@ -82,22 +84,22 @@ function Footer() {
             <SocialLink>
               <Links>
                 <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                  <AiFillMail size={24} />
+                  <AiFillMail size={30} fill="#fff" />
                 </ExternalLink>
               </Links>
               <Links>
                 <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
-                  <AiFillLinkedin size={24} />
+                  <AiFillLinkedin size={30} fill="#fff" />
                 </ExternalLink>
               </Links>
               <Links>
                 <ExternalLink href="https://github.com/Renda02">
-                  <AiFillGithub size={24} />
+                  <AiFillGithub size={30} fill="#fff" />
                 </ExternalLink>
               </Links>
               <Links>
                 <ExternalLink href="https://twitter.com/rendani18824096/">
-                  <AiFillTwitterCircle size={24} />
+                  <AiFillTwitterCircle size={30} fill="#ababab" />
                 </ExternalLink>
               </Links>
             </SocialLink>

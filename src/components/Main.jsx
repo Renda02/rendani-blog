@@ -71,6 +71,7 @@ function Main() {
             theme={themeColor}
             fontSize={18}
             fullYear={false}
+           
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
