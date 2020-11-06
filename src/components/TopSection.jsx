@@ -35,8 +35,9 @@ const Name = styled.h1`
   
 `;
 
-const Greetings = styled.p`
+const Greetings = styled.h6`
 font-size:20px;
+color:#000;
 `;
 
 const About = styled.div`

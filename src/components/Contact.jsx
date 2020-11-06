@@ -1,52 +1,27 @@
 function Contact() {
   return (
     <div className="form">
-      <h2 className="form__heading">Contact me</h2>
-      <div className="form__row">
-        <div className="col">
-          <div className="form__input">
-            <input type="text" name="" required="required" />
-            <span className="text">First Name</span>
-            <span className="line"></span>
-          </div>
-        </div>
-
-        <div className="col">
-          <div className="form__input">
-            <input type="text" name="" required="required" />
-            <span className="text">Last Name</span>
-            <span className="line"></span>
-          </div>
-        </div>
-      </div>
-      <div className="form__row">
-        <div className="col">
-          <div className="form__input">
-            <input type="text" name="" required="required" />
-            <span className="text">Email</span>
-            <span className="line"></span>
-          </div>
-        </div>
-        <div className="col">
-          <div className="form__input">
-            <input type="text" name="" required="required" />
-            <span className="text">Mobile Number</span>
-            <span className="line"></span>
-          </div>
-        </div>
-      </div>
-      <div className="form__row">
-        <div className="col">
-          <div className="form__input textarea">
-            <textarea required="required"></textarea>
-            <span className="text">Type your message here..</span>
-            <span className="line"></span>
-          </div>
-        </div>
-      </div>
-      <div className="form__row">
-        <div className="col">
-          <input type="submit" value="Send"/>
+      <h2 className="form__heading">Contact Us</h2>
+      
+      <div className="contact-form">
+        <div>
+          <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="text" placeholder="Last Name" />
+            <br />
+            <input type="Email" placeholder="Email" required />
+            <br />
+            <input type="text" placeholder="Subject of this message" />
+            <br />
+            <textarea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+            <br />
+            <button className="submit">Send Message</button>
+          </form>
         </div>
       </div>
     </div>

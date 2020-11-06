@@ -88,7 +88,7 @@ function Body() {
           </p>
         </div>
       </BodyRow>
-      <input type="submit"  className="btn__body" value="Learn More"/>
+      <button type="submit"  className="btn__body" >Learn More</button>
       <Main />
       <BottomSection />
     </Container>
