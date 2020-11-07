@@ -60,7 +60,7 @@ function Body() {
       </BodyHeading>
       <BodyRow>
         <div className="card__a">
-          <img src={goal} width={90} alt="coding" className="icon__card" />
+          <img src={goal} alt="coding" className="icon__card" />
           <CardTiltle>Goal Oriented</CardTiltle>
           <br />
 

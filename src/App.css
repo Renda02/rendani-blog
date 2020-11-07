@@ -94,25 +94,8 @@ img {
 }
 
 /*Form*/
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
- background: #1D1D1E;
-}
 
-.form__heading {
-  text-align: center;
-  text-decoration: underline;
-font-family: cooperboldbt;
-  text-underline-position: under;
-  color:#fff ;
-  letter-spacing: 2px;
-}
+
 
 
 .contact-form {
@@ -174,5 +157,12 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+
+/*Bottom*/
+
+.card-img{
+  border-radius: 5px 5px 0 0;
+  
+}
 
 

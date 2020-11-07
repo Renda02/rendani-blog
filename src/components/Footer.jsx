@@ -63,7 +63,7 @@ const Links = styled.li`
   flex-direction: column;
   text-decoration: none;
   justify-content: space-between;
-  color:#fff;
+  color: #fff;
   cursor: pointer;
 `;
 function Footer() {
@@ -114,4 +114,3 @@ function Footer() {
 }
 
 export default Footer;
-

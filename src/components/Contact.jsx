@@ -1,9 +1,36 @@
+import styled from "styled-components";
+
+const Form = styled.form`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #333;
+`;
+
+const Heading = styled.h2`
+  text-align: center;
+  text-decoration: underline;
+  font-family: cooperboldbt;
+  text-underline-position: under;
+  color: #fff;
+  letter-spacing: 2px;
+`;
+
+const FormWrapper = styled.div`
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-top: 20px;
+`;
+
 function Contact() {
   return (
-    <div className="form">
-      <h2 className="form__heading">Get in touch with me </h2>
-      
-      <div className="contact-form">
+    <Form>
+      <Heading>Get in touch with me </Heading>
+      <FormWrapper>
         <div>
           <form>
             <input type="text" placeholder="Your Name" required />
@@ -23,9 +50,8 @@ function Contact() {
             <button className="submit">Send Message</button>
           </form>
         </div>
-      </div>
-      
-    </div>
+      </FormWrapper>
+    </Form>
   );
 }
 

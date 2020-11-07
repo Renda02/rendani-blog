@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import { ExternalLink } from "react-external-link";
+import avatar from "../images/html.jpg";
+
 
 const MainSection = styled.div`
   width: 100%;
@@ -40,6 +43,26 @@ const Heading = styled.div`
   font-family: "cooperboldbt", serif; ;
 `;
 
+const Project = styled.div`
+  max-width: 1080px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 16px;
+`;
+
+const CardHeading = styled.h4`
+  font-size: 20px;
+  text-align: center;
+`;
+
+const DemoLink = styled.div`
+padding:3px;
+border:none;
+display:flex;
+justify-content:space-between`;
+
+
+
 
 function BottomSection() {
   return (
@@ -52,7 +75,74 @@ function BottomSection() {
             used.{" "}
           </h3>
         </Heading>
-        <div className="projects"></div>
+        <Project>
+          <div className="card__a">
+            <img src={avatar} alt="project 1" className="card-img" />
+            <CardHeading>Project 1</CardHeading>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              architecto natus ipsa dignissimos porro rem neque, repudiandae
+              libero sapiente iste perferendis quidem quae numquam ducimus
+              pariatur voluptatem ex! A, laboriosam!
+            </p>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
+                <button size="small" color="primary">
+                  Source Code{" "}
+                </button>
+              </ExternalLink>
+              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
+                <button size="small" color="primary">
+                  Live Demo
+                </button>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+          <div className="card__b">
+            <img src={avatar} alt="project 1" className="card-img" />
+            <CardHeading>Project 1</CardHeading>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              architecto natus ipsa dignissimos porro rem neque, repudiandae
+              libero sapiente iste perferendis quidem quae numquam ducimus
+              pariatur voluptatem ex! A, laboriosam!
+            </p>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
+                <button size="small" color="primary">
+                  Source Code{" "}
+                </button>
+              </ExternalLink>
+              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
+                <button size="small" color="primary">
+                  Live Demo
+                </button>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+          <div className="card__b">
+            <img src={avatar} alt="project 1" className="card-img" />
+            <CardHeading>Project 1</CardHeading>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
+              architecto natus ipsa dignissimos porro rem neque, repudiandae
+              libero sapiente iste perferendis quidem quae numquam ducimus
+              pariatur voluptatem ex! A, laboriosam!
+            </p>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
+                <button size="small" color="primary">
+                  Source Code{" "}
+                </button>
+              </ExternalLink>
+              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
+                <button size="small" color="primary">
+                  Live Demo
+                </button>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+        </Project>
       </Wrapper>
     </MainSection>
   );
