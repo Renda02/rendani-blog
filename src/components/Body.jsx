@@ -1,7 +1,7 @@
 import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
-import styled from "styled-components"
+import styled from "styled-components";
 
 import code from "../images/code.svg";
 import teams from "../images/adapt.svg";
@@ -9,7 +9,7 @@ import goal from "../images/goal.svg";
 
 const Container = styled.div`
   width: 100%;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,17 +18,16 @@ const Container = styled.div`
 `;
 
 const BodyHeading = styled.div`
- max-width: 1080px;
+  max-width: 1080px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-  font-weight: 500;
+  
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
-  font-family: "cooperboldbt", serif;
 `;
 
 const BodyRow = styled.div`
@@ -37,7 +36,6 @@ const BodyRow = styled.div`
   justify-content: space-between;
   padding: 2px 16px;
 `;
-
 
 const CardTiltle = styled.h4`
   font-size: 20px;
@@ -88,7 +86,9 @@ function Body() {
           </p>
         </div>
       </BodyRow>
-      <button type="submit"  className="btn__body" >Learn More</button>
+      <button type="submit" className="btn__body">
+        Learn More
+      </button>
       <Main />
       <BottomSection />
     </Container>

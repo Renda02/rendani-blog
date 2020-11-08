@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { ExternalLink } from "react-external-link";
 import avatar from "../images/html.jpg";
 
-
 const MainSection = styled.div`
   width: 100%;
   display: flex;
@@ -21,12 +20,11 @@ const Wrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-  font-weight: 500;
+ 
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
-  font-family: "cooperboldbt", serif;
 `;
 
 const Heading = styled.div`
@@ -35,12 +33,11 @@ const Heading = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
-  font-family: "cooperboldbt", serif; ;
 `;
 
 const Project = styled.div`
@@ -56,13 +53,11 @@ const CardHeading = styled.h4`
 `;
 
 const DemoLink = styled.div`
-padding:3px;
-border:none;
-display:flex;
-justify-content:space-between`;
-
-
-
+  padding: 3px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+`;
 
 function BottomSection() {
   return (
@@ -100,7 +95,7 @@ function BottomSection() {
           </div>
           <div className="card__b">
             <img src={avatar} alt="project 1" className="card-img" />
-            <CardHeading>Project 1</CardHeading>
+            <CardHeading>Project 2</CardHeading>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
               architecto natus ipsa dignissimos porro rem neque, repudiandae
@@ -121,7 +116,7 @@ function BottomSection() {
             </DemoLink>
           </div>
           <div className="card__b">
-            <img src={avatar} alt="project 1" className="card-img" />
+            <img src={avatar} alt="project 3" className="card-img" />
             <CardHeading>Project 1</CardHeading>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia

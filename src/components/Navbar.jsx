@@ -33,7 +33,7 @@ const NavLink = styled.a`
   line-height: 23px;
   color:#000;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 300;
   margin-right: 20px;
   transition: all 0.3s ease;
 `;

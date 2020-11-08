@@ -32,7 +32,8 @@ const Title = styled.p`
 
 const Name = styled.h1`
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 300;
+  line-height:40px;
   
 `;
 
@@ -45,6 +46,7 @@ const About = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  line-height: 40px;
 `;
 
 function TopSection() {
@@ -54,7 +56,7 @@ function TopSection() {
         <About>
           <Greetings>Hello , I am</Greetings>
         <Name>Rendani Luvhengo</Name>
-        <br />
+        
         <Title>
           <Typed
             strings={["Front End Developer"]}

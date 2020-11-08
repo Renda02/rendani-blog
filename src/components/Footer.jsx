@@ -52,8 +52,8 @@ const SubFooter = styled.div`
   background-color: #f4f3f5;
   color: #000000;
   font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-family: sans-serif;
+  font-weight:bold;
   line-height: 21px;
   width: 100%;
 `;

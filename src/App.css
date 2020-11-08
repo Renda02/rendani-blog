@@ -6,7 +6,9 @@
 /*Footer*/
 
 /*NavBar*/
-@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+body {
+  font-family: "Questrial", sans-serif;
+}
 
 .nav__list li a:hover {
   border-bottom: 2px solid #dd3435;
@@ -50,15 +52,9 @@ img {
 
 /*Body*/
 
-
-
-
-
-
 .card__a,
 .card__b,
 .card__c {
-
   transition: 0.3s;
   padding: 20px 10px 25px 10px;
 }
@@ -68,14 +64,12 @@ img {
   margin-left: 5px;
 }
 
-
 .icon__card {
   width: 70px;
   height: 70px;
   border-radius: 400px;
   margin-bottom: 10px;
 }
-
 
 /*Main*/
 
@@ -86,7 +80,7 @@ img {
   padding: 0 5%;
   border-radius: 10px;
   font-size: 18px;
-  font-weight: 600;
+
   line-height: 44px;
   font-family: " cooperboldbt", sans-serif;
   font-weight: 400px;
@@ -94,9 +88,6 @@ img {
 }
 
 /*Form*/
-
-
-
 
 .contact-form {
   display: grid;
@@ -124,7 +115,7 @@ textarea {
   padding: 10px;
   margin: 10px;
   width: 90%;
-  background-color:  rgba(201, 198, 198, 0.5);
+  background-color: rgba(201, 198, 198, 0.5);
   color: white;
   border: none;
   outline: none;
@@ -157,12 +148,8 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-
 /*Bottom*/
 
-.card-img{
+.card-img {
   border-radius: 5px 5px 0 0;
-  
 }
-
-
