@@ -1,11 +1,14 @@
 import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
+import Contact from "./Contact";
+import Footer from "./Footer"
 import styled from "styled-components";
 
 import code from "../images/code.svg";
 import teams from "../images/adapt.svg";
 import goal from "../images/goal.svg";
+
 
 const Container = styled.div`
   width: 100%;
@@ -91,6 +94,8 @@ function Body() {
       </button>
       <Main />
       <BottomSection />
+      <Contact />
+      <Footer/>
     </Container>
   );
 }

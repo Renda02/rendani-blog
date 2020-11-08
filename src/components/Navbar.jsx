@@ -1,5 +1,33 @@
 import styled from "styled-components";
 
+
+
+
+function Navbar() {
+  return (
+    <Header>
+      <NavWrapper>
+        <Logo>Rendani Luvhengo</Logo>
+        <NavUl>
+          <NavList>
+            <NavLink href="/">Home</NavLink>
+          </NavList>
+          <NavList>
+            <NavLink href="/">About</NavLink>{" "}
+          </NavList>
+          <NavList>
+            <NavLink href="/" className="navbar__contact">
+              Contact
+            </NavLink>
+          </NavList>
+        </NavUl>
+      </NavWrapper>
+    </Header>
+  );
+}
+
+export default Navbar;
+
 const Header = styled.div`
  position: fixed;
   top: 0px;
@@ -45,29 +73,3 @@ const Logo = styled.h4`
   font-weight: 500;
   font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
 `;
-
-
-function Navbar() {
-  return (
-    <Header>
-      <NavWrapper>
-        <Logo>Rendani Luvhengo</Logo>
-        <NavUl>
-          <NavList>
-            <NavLink href="/">Home</NavLink>
-          </NavList>
-          <NavList>
-            <NavLink href="/">About</NavLink>{" "}
-          </NavList>
-          <NavList>
-            <NavLink href="/" className="navbar__contact">
-              Contact
-            </NavLink>
-          </NavList>
-        </NavUl>
-      </NavWrapper>
-    </Header>
-  );
-}
-
-export default Navbar;

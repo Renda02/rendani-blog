@@ -8,64 +8,6 @@ import {
 
 import styled from "styled-components";
 
-const Main = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  align-items: center;
-  background: #000000;
-  min-height: 300px;
-`;
-
-const Cointaner = styled.div`
-  display: flex;
-  justify-content: space-around;
-  max-width: 1080px;
-  width: 100%;
-`;
-
-const FooterColumn = styled.div`
-  width: calc(100% / 3);
-`;
-
-const SectionTitle = styled.h3`
-  font-family: cooperboldbt;
-  font-weight: 500;
-  color: #e39aa4;
-  padding-top: 15px;
-  padding-bottom: 15px;
-`;
-
-const Paragraph = styled.p`
-  color: #ababab;
-`;
-
-const SocialLink = styled.ul`
-  display: flex;
-`;
-
-const SubFooter = styled.div`
-  padding: 10px;
-  display: flex;
-  justify-content: flex-start;
-  background-color: #f4f3f5;
-  color: #000000;
-  font-size: 18px;
-  font-family: sans-serif;
-  font-weight:bold;
-  line-height: 21px;
-  width: 100%;
-`;
-
-const Links = styled.li`
-  display: flex;
-  flex-direction: column;
-  text-decoration: none;
-  justify-content: space-between;
-  color: #fff;
-  cursor: pointer;
-`;
 function Footer() {
   return (
     <Main>
@@ -114,3 +56,62 @@ function Footer() {
 }
 
 export default Footer;
+
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  background: #000000;
+  min-height: 300px;
+`;
+
+const Cointaner = styled.div`
+  display: flex;
+  justify-content: space-around;
+  max-width: 1080px;
+  width: 100%;
+`;
+
+const FooterColumn = styled.div`
+  width: calc(100% / 3);
+`;
+
+const SectionTitle = styled.h3`
+  font-family: cooperboldbt;
+  font-weight: 500;
+  color: #e39aa4;
+  padding-top: 15px;
+  padding-bottom: 15px;
+`;
+
+const Paragraph = styled.p`
+  color: #ababab;
+`;
+
+const SocialLink = styled.ul`
+  display: flex;
+`;
+
+const SubFooter = styled.div`
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f4f3f5;
+  color: #000000;
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 21px;
+  width: 100%;
+`;
+
+const Links = styled.li`
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: space-between;
+  color: #fff;
+  cursor: pointer;
+`;

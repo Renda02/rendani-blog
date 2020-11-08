@@ -2,6 +2,33 @@ import Typed from "react-typed";
 import avatar from "../images/image.JPG";
 import styled from "styled-components";
 
+
+
+function TopSection() {
+  return (
+    <Body>
+      <IntroContainer>
+        <About>
+          <Greetings>Hello , I am</Greetings>
+        <Name>Rendani Luvhengo</Name>
+        
+        <Title>
+          <Typed
+            strings={["Front End Developer"]}
+            typeSpeed={30}
+            showCursor={false}
+          />
+          </Title>
+        </About>
+       
+      </IntroContainer>
+      <img src={avatar} alt="logo" />
+    </Body>
+  );
+}
+
+export default TopSection;
+
 const IntroContainer = styled.div`
   text-align: center;
   line-height: 24px;
@@ -48,28 +75,3 @@ const About = styled.div`
   align-items: flex-start;
   line-height: 40px;
 `;
-
-function TopSection() {
-  return (
-    <Body>
-      <IntroContainer>
-        <About>
-          <Greetings>Hello , I am</Greetings>
-        <Name>Rendani Luvhengo</Name>
-        
-        <Title>
-          <Typed
-            strings={["Front End Developer"]}
-            typeSpeed={30}
-            showCursor={false}
-          />
-          </Title>
-        </About>
-       
-      </IntroContainer>
-      <img src={avatar} alt="logo" />
-    </Body>
-  );
-}
-
-export default TopSection;
