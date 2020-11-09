@@ -1,11 +1,8 @@
 import styled from "styled-components";
 
-
-
-
-function Navbar() {
+function Header() {
   return (
-    <Header>
+    <NavBar>
       <NavWrapper>
         <Logo>Rendani Luvhengo</Logo>
         <NavUl>
@@ -22,14 +19,14 @@ function Navbar() {
           </NavList>
         </NavUl>
       </NavWrapper>
-    </Header>
+    </NavBar>
   );
 }
 
-export default Navbar;
+export default Header;
 
-const Header = styled.div`
- position: fixed;
+const NavBar = styled.div`
+  position: fixed;
   top: 0px;
   z-index: 5;
   width: 100%;
@@ -59,7 +56,7 @@ const NavLink = styled.a`
   font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   line-height: 23px;
-  color:#000;
+  color: #000;
   text-decoration: none;
   font-weight: 300;
   margin-right: 20px;

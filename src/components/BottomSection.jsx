@@ -2,6 +2,78 @@ import styled from "styled-components";
 import { ExternalLink } from "react-external-link";
 import avatar from "../images/html.jpg";
 
+
+
+function BottomSection() {
+  return (
+    <MainSection>
+      <Wrapper>
+        <Heading>
+          <h2>My most recent adventures</h2>
+          <h3>
+            Get to know projects I've worked with and what technologies I've
+            used.{" "}
+          </h3>
+        </Heading>
+        <Project>
+          <div className="card__a">
+            <img src={avatar} alt="project 1" className="card-img" />
+            <CardHeading>Project 1</CardHeading>
+            <Paragraph>
+              Simple weather app created using HTML,CSS,Bootstrap and JS. I use
+              the Open Weather Map API to fetch data.
+            </Paragraph>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
+                <Span href="/">Source Code </Span>
+              </ExternalLink>
+              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
+                <Span href="/">Live Demo</Span>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+          <div className="card__b">
+            <img src={avatar} alt="project 1" className="card-img" />
+            <CardHeading>Project 2</CardHeading>
+            <Paragraph>
+              A React Weather App that display weather for next 5 hours and
+              fetched data using Open Weather API.
+            </Paragraph>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/weather-react">
+                <Span>Source Code </Span>
+              </ExternalLink>
+              <ExternalLink href="https://heuristic-kilby-a7fe7c.netlify.app/">
+                <Span>Live Demo</Span>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+          <div className="card__b">
+            <img src={avatar} alt="project 3" className="card-img" />
+            <CardHeading>Project 3</CardHeading>
+            <Paragraph>
+              Covid Tracker that is mobile-friendly that was built using React
+              and Material UI. I fetch data from disease.sh - Open Disease Data
+              daily data
+            </Paragraph>
+            <DemoLink>
+              <ExternalLink href="https://github.com/Renda02/COVID-Tracker">
+                <Span>Source Code </Span>
+              </ExternalLink>
+              <ExternalLink href="https://infallible-jackson-4be24d.netlify.app/">
+                <Span>Live Demo</Span>
+              </ExternalLink>
+            </DemoLink>
+          </div>
+        </Project>
+       
+      </Wrapper>
+    </MainSection>
+  );
+}
+
+export default BottomSection;
+
 const MainSection = styled.div`
   width: 100%;
   display: flex;
@@ -35,9 +107,10 @@ const Heading = styled.div`
   font-size: 20px;
   font-weight: 300;
   color: #000000;
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
   width: 100%;
+
 `;
 
 const Project = styled.div`
@@ -59,88 +132,11 @@ const DemoLink = styled.div`
   justify-content: space-between;
 `;
 
-function BottomSection() {
-  return (
-    <MainSection>
-      <Wrapper>
-        <Heading>
-          <h2>My most recent adventures</h2>
-          <h3>
-            Get to know projects I've worked with and what technologies I've
-            used.{" "}
-          </h3>
-        </Heading>
-        <Project>
-          <div className="card__a">
-            <img src={avatar} alt="project 1" className="card-img" />
-            <CardHeading>Project 1</CardHeading>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              architecto natus ipsa dignissimos porro rem neque, repudiandae
-              libero sapiente iste perferendis quidem quae numquam ducimus
-              pariatur voluptatem ex! A, laboriosam!
-            </p>
-            <DemoLink>
-              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
-                <button size="small" color="primary">
-                  Source Code{" "}
-                </button>
-              </ExternalLink>
-              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
-                <button size="small" color="primary">
-                  Live Demo
-                </button>
-              </ExternalLink>
-            </DemoLink>
-          </div>
-          <div className="card__b">
-            <img src={avatar} alt="project 1" className="card-img" />
-            <CardHeading>Project 2</CardHeading>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              architecto natus ipsa dignissimos porro rem neque, repudiandae
-              libero sapiente iste perferendis quidem quae numquam ducimus
-              pariatur voluptatem ex! A, laboriosam!
-            </p>
-            <DemoLink>
-              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
-                <button size="small" color="primary">
-                  Source Code{" "}
-                </button>
-              </ExternalLink>
-              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
-                <button size="small" color="primary">
-                  Live Demo
-                </button>
-              </ExternalLink>
-            </DemoLink>
-          </div>
-          <div className="card__b">
-            <img src={avatar} alt="project 3" className="card-img" />
-            <CardHeading>Project 1</CardHeading>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia
-              architecto natus ipsa dignissimos porro rem neque, repudiandae
-              libero sapiente iste perferendis quidem quae numquam ducimus
-              pariatur voluptatem ex! A, laboriosam!
-            </p>
-            <DemoLink>
-              <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
-                <button size="small" color="primary">
-                  Source Code{" "}
-                </button>
-              </ExternalLink>
-              <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
-                <button size="small" color="primary">
-                  Live Demo
-                </button>
-              </ExternalLink>
-            </DemoLink>
-          </div>
-        </Project>
-      </Wrapper>
-    </MainSection>
-  );
-}
+const Span = styled.span`
+padding:5px;
+line-height:10px;
+margin:5px;`;
 
-export default BottomSection;
+const Paragraph = styled.p`
+margin-bottom:8px;
+`;

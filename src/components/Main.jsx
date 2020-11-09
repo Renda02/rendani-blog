@@ -16,12 +16,13 @@ function Main() {
           <br />
         </Heading>
         <h4>Check out my GitHub Calendar:</h4>
-        <Calendar>
+        <Calendar align="center">
           <GitHubCalendar
             username="renda02"
             theme={themeColor}
             fontSize={18}
             fullYear={false}
+          
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
@@ -72,6 +73,8 @@ const Calendar = styled.div`
   margin-bottom: 10px;
   margin-top: 10px;
   padding: 20px;
+
+  
 `;
 
 const themeColor = {
