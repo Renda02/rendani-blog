@@ -2,13 +2,69 @@ import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
 import Contact from "./Contact";
-import Footer from "./Footer"
+import Footer from "./Footer";
 import styled from "styled-components";
 
-import code from "../images/code.svg";
-import teams from "../images/adapt.svg";
+import code from "../images/code.png";
+import teams from "../images/puzzle.png";
 import goal from "../images/goal.svg";
 
+function Body() {
+  return (
+    <Container>
+      <TopSection />
+      <BodyHeading>
+        <h2> Who am I?</h2>
+        <h3>
+          {" "}
+          I come from manufacturing and construction industry where
+          quality-work,continuous improvement and meeting all customer's
+          requirements is a priority. But in the end, my fascination with tech
+          inspired me take the leap.{" "}
+        </h3>
+      </BodyHeading>
+      <BodyRow>
+        <div className="card__a">
+          <Icons src={goal} alt="coding" />
+          <CardTiltle>Goal Oriented</CardTiltle>
+          <br />
+
+          <p>
+            I am focused on meeting all deliverables while maintaining
+            reliability and meeting customer's expectations.
+          </p>
+        </div>
+        <div className="card__b">
+          <Icons src={code} width={90} alt="coding" />
+          <CardTiltle>I code,too</CardTiltle>
+          <br />
+          <p>
+            I love coding because it is fun and the sense of accomplishment when
+            solving a really complicated problem cannot be beat!
+          </p>
+        </div>
+        <div className="card__c">
+          <Icons src={teams} width={90} alt="coding" />
+          <CardTiltle>Easily Adaptive</CardTiltle>
+          <br />
+          <p>
+            I thrive well in a rapid growing and progressive company that
+            encourange continous improvement.
+          </p>
+        </div>
+      </BodyRow>
+      <button type="submit" className="btn__body">
+        Learn More
+      </button>
+      <Main />
+      <BottomSection />
+      <Contact />
+      <Footer />
+    </Container>
+  );
+}
+
+export default Body;
 
 const Container = styled.div`
   width: 100%;
@@ -26,7 +82,7 @@ const BodyHeading = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-  
+
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -45,59 +101,7 @@ const CardTiltle = styled.h4`
   text-align: center;
 `;
 
-function Body() {
-  return (
-    <Container>
-      <TopSection />
-      <BodyHeading>
-        <h2> Who am I?</h2>
-        <h3>
-          {" "}
-          I come from manufacturing and construction industry where
-          quality-work,continuous improvement and meeting all customer's
-          requirements is a priority. But in the end, my fascination with tech
-          inspired me take the leap.{" "}
-        </h3>
-      </BodyHeading>
-      <BodyRow>
-        <div className="card__a">
-          <img src={goal} alt="coding" className="icon__card" />
-          <CardTiltle>Goal Oriented</CardTiltle>
-          <br />
-
-          <p>
-            I am focused on meeting all deliverables while maintaining
-            reliability and meeting customer's expectations.
-          </p>
-        </div>
-        <div className="card__b">
-          <img src={code} width={90} alt="coding" className="icon__card" />
-          <CardTiltle>I code,too</CardTiltle>
-          <br />
-          <p>
-            I love coding because it is fun-The sense of accomplishment when
-            solving a really complicated problem cannot be beat!
-          </p>
-        </div>
-        <div className="card__c">
-          <img src={teams} width={90} alt="coding" className="icon__card" />
-          <CardTiltle>Easily Adaptive</CardTiltle>
-          <br />
-          <p>
-            I thrive well in a rapid growing and progressive company that
-            encourange continous improvement.
-          </p>
-        </div>
-      </BodyRow>
-      <button type="submit" className="btn__body">
-        Learn More
-      </button>
-      <Main />
-      <BottomSection />
-      <Contact />
-      <Footer/>
-    </Container>
-  );
-}
-
-export default Body;
+const Icons = styled.img`
+  width: 80px;
+  margin-bottom: 10px;
+`;

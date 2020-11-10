@@ -14,7 +14,7 @@ body {
   border-bottom: 2px solid #dd3435;
 }
 
-@media (max-width: 900px) {
+/*@media (max-width: 900px) {
   .navbar .nav__list {
     display: block;
     position: fixed;
@@ -39,7 +39,7 @@ body {
     margin-left: -100px;
     transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   }
-}
+}*/
 
 /*TopSection*/
 
@@ -64,12 +64,6 @@ img {
   margin-left: 5px;
 }
 
-.icon__card {
-  width: 70px;
-  height: 70px;
-  border-radius: 400px;
-  margin-bottom: 10px;
-}
 
 /*Main*/
 

@@ -7,12 +7,12 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="App">
+      
         {" "}
         <Header />
         <Body />
         
-      </div>
+    
     </Router>
   );
 }
