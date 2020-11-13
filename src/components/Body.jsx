@@ -53,9 +53,9 @@ function Body() {
           </p>
         </div>
       </BodyRow>
-      <button type="submit" className="btn__body">
+      <Button type="submit" >
         Learn More
-      </button>
+      </Button>
       <Main />
       <BottomSection />
       <Contact />
@@ -104,4 +104,17 @@ const CardTiltle = styled.h4`
 const Icons = styled.img`
   width: 80px;
   margin-bottom: 10px;
+`;
+
+const Button = styled.button`
+  background: #000000;
+  color: #fff;
+  border: none;
+  padding: 0 5%;
+  border-radius: 10px;
+  font-size: 18px;
+
+  line-height: 44px;
+
+  cursor: pointer;
 `;

@@ -22,7 +22,7 @@ function TopSection() {
         </About>
        
       </IntroContainer>
-      <img src={avatar} alt="logo" />
+      <Image src={avatar} alt="logo" />
     </Body>
   );
 }
@@ -63,6 +63,11 @@ const Name = styled.h1`
   line-height:40px;
   
 `;
+
+const Image=styled.img`  border: 5px;
+  margin: auto;
+  max-width: 350px;
+  display: block;`
 
 const Greetings = styled.h6`
 font-size:20px;

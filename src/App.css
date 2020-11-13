@@ -41,7 +41,6 @@ body {
   }
 }*/
 
-/*TopSection*/
 
 img {
   border: 5px;
@@ -65,21 +64,6 @@ img {
 }
 
 
-/*Main*/
-
-.btn__body {
-  background: #000000;
-  color: #fff;
-  border: none;
-  padding: 0 5%;
-  border-radius: 10px;
-  font-size: 18px;
-
-  line-height: 44px;
-  font-family: " cooperboldbt", sans-serif;
-  font-weight: 400px;
-  cursor: pointer;
-}
 
 /*Form*/
 
