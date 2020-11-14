@@ -15,19 +15,19 @@ function Body() {
       <TopSection />
       <BodyHeading>
         <h2> Who am I?</h2>
-        <h3>
+        <Intro>
           {" "}
           I come from manufacturing and construction industry where
           quality-work,continuous improvement and meeting all customer's
           requirements is a priority. But in the end, my fascination with tech
           inspired me take the leap.{" "}
-        </h3>
+        </Intro>
       </BodyHeading>
       <BodyRow>
         <div className="card__a">
           <Icons src={goal}  height={80} alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
-          <br />
+          
 
           <p>
             I am focused on meeting all deliverables while maintaining
@@ -83,6 +83,9 @@ const BodyHeading = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
   width: 100%;
+`;
+const Intro = styled.p`
+  font-weight: 200px;
 `;
 
 const BodyRow = styled.div`

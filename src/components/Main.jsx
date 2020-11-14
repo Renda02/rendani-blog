@@ -8,11 +8,11 @@ function Main() {
       <MainWrapper>
         <Heading>
           <h2> What have I been to</h2>
-          <h3>
+          <Intro>
             Now that I am pursuing web development as my career, I have never
             stop learning and improving my technical knowledge by getting into
             coding, following content that insipire me and networking.
-          </h3>
+          </Intro>
           <br />
         </Heading>
         <h4>Check out my GitHub Calendar:</h4>
@@ -22,7 +22,7 @@ function Main() {
             theme={themeColor}
             fontSize={18}
             fullYear={false}
-          
+       
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
@@ -55,6 +55,9 @@ const MainWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
 `;
+
+const Intro = styled.p`
+font-weight:200px;`;
 
 const Heading = styled.div`
   max-width: 1080px;

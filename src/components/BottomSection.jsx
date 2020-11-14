@@ -10,14 +10,14 @@ function BottomSection() {
       <Wrapper>
         <Heading>
           <h2>My most recent adventures</h2>
-          <h3>
+          <Intro>
             Get to know projects I've worked with and what technologies I've
             used.{" "}
-          </h3>
+          </Intro>
         </Heading>
         <Project>
           <div className="card__a">
-            <img src={avatar} alt="project 1" className="card-img" />
+            <Image src={avatar} alt="project 1" className="card<Image" />
             <CardHeading>Project 1</CardHeading>
             <Paragraph>
               Simple weather app created using HTML,CSS,Bootstrap and JS. I use
@@ -33,7 +33,7 @@ function BottomSection() {
             </DemoLink>
           </div>
           <div className="card__b">
-            <img src={avatar} alt="project 1" className="card-img" />
+            <Image src={avatar} alt="project 1" className="card<Image" />
             <CardHeading>Project 2</CardHeading>
             <Paragraph>
               A React Weather App that display weather for next 5 hours and
@@ -49,7 +49,7 @@ function BottomSection() {
             </DemoLink>
           </div>
           <div className="card__b">
-            <img src={avatar} alt="project 3" className="card-img" />
+            <Image src={avatar} alt="project 3" className="card<Image" />
             <CardHeading>Project 3</CardHeading>
             <Paragraph>
               Covid Tracker that is mobile-friendly that was built using React
@@ -105,12 +105,21 @@ const Heading = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-
   color: #000000;
   padding-top: 20px;
   padding-bottom: 40px;
   width: 100%;
+`;
 
+const Image = styled.img`
+  border: 5px;
+  margin: auto;
+  max-width: 350px;
+  display:flex;
+`;
+
+const Intro = styled.p`
+  font-weight: 200px;
 `;
 
 const Project = styled.div`

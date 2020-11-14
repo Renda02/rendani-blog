@@ -43,9 +43,9 @@ const Body = styled.div`
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
-  height: 665px;
+padding: 2rem 0;
 
-  padding: 1 rem;
+
 `;
 
 const Title = styled.p`
@@ -58,9 +58,9 @@ const Title = styled.p`
 `;
 
 const Name = styled.h1`
-  font-size: 40px;
-  font-weight: 300;
-  line-height:40px;
+  font-size: 50px;
+  font-weight: 400;
+  line-height:70px;
   
 `;
 
@@ -69,7 +69,7 @@ const Image=styled.img`  border: 5px;
   max-width: 350px;
   display: block;`
 
-const Greetings = styled.h6`
+const Greetings = styled.span`
 font-size:20px;
 color:#000;
 `;

@@ -14,9 +14,7 @@ function Header() {
             <NavLink to="/about">About</NavLink>
           </NavList>
           <NavList>
-            <NavLink to="/contact" >
-              Contact
-            </NavLink>
+            <NavLink to="/contact">Contact</NavLink>
           </NavList>
         </NavUl>
       </NavWrapper>
@@ -27,7 +25,7 @@ function Header() {
 export default Header;
 
 const NavBar = styled.div`
-  position: fixed;
+  position: sticky;
   top: 0px;
   z-index: 5;
   width: 100%;
@@ -43,6 +41,8 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
+  position: sticky;
+  top: 0px;
 `;
 
 const NavUl = styled.ul`
@@ -51,10 +51,12 @@ const NavUl = styled.ul`
 
 const NavList = styled.li`
   list-style: none;
+  justify-content: center;
+  align-items: center;
+  display: flex; ;
 `;
 
 const NavLink = styled(Link)`
-  font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #000;
@@ -69,5 +71,4 @@ const Logo = styled.h4`
   margin-right: 20px;
   font-size: 30px;
   font-weight: 500;
-  font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
 `;
