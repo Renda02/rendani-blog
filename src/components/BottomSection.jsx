@@ -105,7 +105,7 @@ const Heading = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-  font-weight: 300;
+
   color: #000000;
   padding-top: 20px;
   padding-bottom: 40px;

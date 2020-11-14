@@ -25,7 +25,7 @@ function Body() {
       </BodyHeading>
       <BodyRow>
         <div className="card__a">
-          <Icons src={goal} alt="coding" />
+          <Icons src={goal}  height={80} alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
           <br />
 
@@ -35,7 +35,7 @@ function Body() {
           </p>
         </div>
         <div className="card__b">
-          <Icons src={code} width={90} alt="coding" />
+          <Icons src={code} alt="coding" />
           <CardTiltle>I code,too</CardTiltle>
           <br />
           <p>
@@ -44,7 +44,7 @@ function Body() {
           </p>
         </div>
         <div className="card__c">
-          <Icons src={teams} width={90} alt="coding" />
+          <Icons src={teams} alt="puzzle" />
           <CardTiltle>Easily Adaptive</CardTiltle>
           <br />
           <p>
@@ -53,9 +53,7 @@ function Body() {
           </p>
         </div>
       </BodyRow>
-      <Button type="submit" >
-        Learn More
-      </Button>
+      <Button type="submit">Learn More</Button>
       <Main />
       <BottomSection />
       <Contact />
@@ -68,7 +66,6 @@ export default Body;
 
 const Container = styled.div`
   width: 100%;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -82,7 +79,6 @@ const BodyHeading = styled.div`
   flex-direction: column;
   align-items: flex-start;
   font-size: 20px;
-
   color: #000000;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -113,8 +109,6 @@ const Button = styled.button`
   padding: 0 5%;
   border-radius: 10px;
   font-size: 18px;
-
   line-height: 44px;
-
   cursor: pointer;
 `;
