@@ -2,7 +2,7 @@ import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
 import Contact from "./Contact";
-import Footer from "./Footer";
+
 import styled from "styled-components";
 
 import code from "../images/code.png";
@@ -57,7 +57,7 @@ function Body() {
       <Main />
       <BottomSection />
       <Contact />
-      <Footer />
+      
     </Container>
   );
 }

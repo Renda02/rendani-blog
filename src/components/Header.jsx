@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -7,13 +8,13 @@ function Header() {
         <Logo>Rendani Luvhengo</Logo>
         <NavUl>
           <NavList>
-            <NavLink href="/">Home</NavLink>
+            <NavLink to="/">Home</NavLink>
           </NavList>
           <NavList>
-            <NavLink href="/">About</NavLink>{" "}
+            <NavLink to="/about">About</NavLink>
           </NavList>
           <NavList>
-            <NavLink href="/" className="navbar__contact">
+            <NavLink to="/contact" >
               Contact
             </NavLink>
           </NavList>
@@ -52,7 +53,7 @@ const NavList = styled.li`
   list-style: none;
 `;
 
-const NavLink = styled.a`
+const NavLink = styled(Link)`
   font-family: "Questrial", Helvetica, Arial, Lucida, sans-serif;
   font-size: 18px;
   line-height: 23px;
