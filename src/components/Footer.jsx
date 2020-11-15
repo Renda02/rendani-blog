@@ -79,7 +79,7 @@ const FooterColumn = styled.div`
 `;
 
 const SectionTitle = styled.h3`
-  font-family: cooperboldbt;
+  
   font-weight: 500;
   color: #e39aa4;
   padding-top: 15px;
@@ -101,7 +101,6 @@ const SubFooter = styled.div`
   background-color: #f4f3f5;
   color: #000000;
   font-size: 18px;
-  font-family: sans-serif;
   font-weight: bold;
   line-height: 21px;
   width: 100%;

@@ -67,7 +67,7 @@ const Name = styled.h1`
 const Image=styled.img`  border: 5px;
   margin: auto;
   max-width: 350px;
-  display: block;`
+  display: flex;`
 
 const Greetings = styled.span`
 font-size:20px;

@@ -91,6 +91,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex-wrap:wrap;
   font-size: 20px;
  
   color: #000000;
