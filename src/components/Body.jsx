@@ -2,7 +2,7 @@ import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
 import Contact from "./Contact";
-
+import {Link} from "react-router-dom"
 import styled from "styled-components";
 
 import code from "../images/code.png";
@@ -53,7 +53,9 @@ function Body() {
           </p>
         </div>
       </BodyRow>
-      <Button type="submit">Learn More</Button>
+      <Link to="/about">
+        <Button type="submit">Learn More</Button>
+      </Link>
       <Main />
       <BottomSection />
       <Contact />
@@ -106,12 +108,13 @@ const Icons = styled.img`
 `;
 
 const Button = styled.button`
-  background: #000000;
-  color: #fff;
+  background: #000;
   border: none;
-  padding: 0 5%;
-  border-radius: 10px;
-  font-size: 18px;
-  line-height: 44px;
+  color: #fff;
+  outline: none;
+  font-size: 17px;
   cursor: pointer;
+  border-radius: 7px;
+  padding: 5px 10px;
+  transition: 0.3ms ease-ease-in-out;
 `;

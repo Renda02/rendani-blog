@@ -53,7 +53,8 @@ const NavList = styled.li`
   list-style: none;
   justify-content: center;
   align-items: center;
-  display: flex; ;
+  display: flex;
+  ;
 `;
 
 const NavLink = styled(Link)`
@@ -61,7 +62,7 @@ const NavLink = styled(Link)`
   line-height: 23px;
   color: #000;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
   margin-right: 20px;
   transition: all 0.3s ease;
 `;

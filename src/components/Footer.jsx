@@ -64,7 +64,7 @@ const Main = styled.div`
   width: 100%;
   align-items: center;
   background: #000000;
-  min-height: 300px;
+ 
 `;
 
 const Cointaner = styled.div`
