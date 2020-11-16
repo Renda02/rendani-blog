@@ -2,7 +2,7 @@ import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
 import Contact from "./Contact";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import code from "../images/code.png";
@@ -15,19 +15,18 @@ function Body() {
       <TopSection />
       <BodyHeading>
         <h2> Who am I?</h2>
-        <Intro>
+        <p>
           {" "}
           I come from manufacturing and construction industry where
           quality-work,continuous improvement and meeting all customer's
           requirements is a priority. But in the end, my fascination with tech
           inspired me take the leap.{" "}
-        </Intro>
+        </p>
       </BodyHeading>
       <BodyRow>
         <div className="card__a">
-          <Icons src={goal}  height={80} alt="tarrget" />
+          <Icons src={goal} height={80} alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
-          
 
           <p>
             I am focused on meeting all deliverables while maintaining
@@ -59,7 +58,6 @@ function Body() {
       <Main />
       <BottomSection />
       <Contact />
-      
     </Container>
   );
 }
@@ -72,7 +70,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
+
 `;
 
 const BodyHeading = styled.div`
@@ -86,15 +84,12 @@ const BodyHeading = styled.div`
   padding-bottom: 40px;
   width: 100%;
 `;
-const Intro = styled.p`
-  font-weight: 200px;
-`;
+
 
 const BodyRow = styled.div`
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
-
   padding: 2px 16px;
 `;
 

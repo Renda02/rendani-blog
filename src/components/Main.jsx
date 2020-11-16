@@ -16,13 +16,13 @@ function Main() {
           <br />
         </Heading>
         <h4>Check out my GitHub Calendar:</h4>
-        <Calendar align="center">
+        <Calendar >
           <GitHubCalendar
             username="renda02"
             theme={themeColor}
             fontSize={18}
             fullYear={false}
-       
+    
           >
             <ReactTooltip delayShow={50} html />
           </GitHubCalendar>
@@ -73,10 +73,9 @@ const Heading = styled.div`
 `;
 
 const Calendar = styled.div`
-  margin-bottom: 10px;
-  margin-top: 10px;
+margin:auto;
   padding: 20px;
-
+text-align:center;
   
 `;
 
