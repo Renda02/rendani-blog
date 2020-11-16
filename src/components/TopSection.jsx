@@ -39,6 +39,7 @@ const IntroContainer = styled.div`
 
 const Body = styled.div`
   display: flex;
+  flex-wrap:wrap;
   width: 1080px;
   justify-content: space-between;
   margin-left: auto;

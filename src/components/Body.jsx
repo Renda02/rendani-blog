@@ -13,6 +13,7 @@ function Body() {
   return (
     <Container>
       <TopSection />
+      <>
       <BodyHeading>
         <h2> Who am I?</h2>
         <p>
@@ -24,7 +25,7 @@ function Body() {
         </p>
       </BodyHeading>
       <BodyRow>
-        <div className="card__a">
+        <Card>
           <Icons src={goal} height={80} alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
 
@@ -32,8 +33,8 @@ function Body() {
             I am focused on meeting all deliverables while maintaining
             reliability and meeting customer's expectations.
           </p>
-        </div>
-        <div className="card__b">
+        </Card>
+        <Card>
           <Icons src={code} alt="coding" />
           <CardTiltle>I code,too</CardTiltle>
           <br />
@@ -41,8 +42,8 @@ function Body() {
             I love coding because it is fun and the sense of accomplishment when
             solving a really complicated problem cannot be beat!
           </p>
-        </div>
-        <div className="card__c">
+        </Card>
+        <Card>
           <Icons src={teams} alt="puzzle" />
           <CardTiltle>Easily Adaptive</CardTiltle>
           <br />
@@ -50,11 +51,12 @@ function Body() {
             I thrive well in a rapid growing and progressive company that
             encourange continous improvement.
           </p>
-        </div>
+        </Card>
       </BodyRow>
       <Link to="/about">
         <Button type="submit">Learn More</Button>
       </Link>
+      </>
       <Main />
       <BottomSection />
       <Contact />
@@ -85,6 +87,14 @@ const BodyHeading = styled.div`
   width: 100%;
 `;
 
+const Card = styled.div`display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+flex-basis:33%;
+padding:1rem;
+transition:0.3s;
+`;
 
 const BodyRow = styled.div`
   max-width: 1080px;
