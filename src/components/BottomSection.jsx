@@ -79,8 +79,8 @@ const Wrapper = styled.div`
   flex-wrap:wrap;
   font-size: 20px;
   color: #000000;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 100%;
 `;
 
@@ -114,14 +114,14 @@ const Image = styled.img`
 
 const CardHeading = styled.h4`
   font-size: 20px;
-  line-height:20px;
+  line-height:2rem;
   text-align: center;
 `;
 
 const DemoLink = styled.div`
+ 
   display: flex;
   justify-content: space-between;
-  align-items:center;
 `;
 
 const Span = styled.span`

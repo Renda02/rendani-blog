@@ -15,14 +15,14 @@ function Contact() {
             <br />
             <input type="text" placeholder="Subject of this message" />
             <br />
-            <textarea
+            <TextArea
               name="message"
               placeholder="Message"
               rows="5"
               required
-            ></textarea>
+            ></TextArea>
             <br />
-            <button className="submit">Send Message</button>
+            <Submit>Send Message</Submit>
           </form>
         </div>
       </FormWrapper>
@@ -56,4 +56,31 @@ const FormWrapper = styled.div`
   display: grid;
   grid-template-columns: auto auto;
   margin-top: 20px;
+`;
+
+const Submit = styled.button`
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border: 7px solid rgb(190, 190, 190);
+  color: rgb(190, 190, 190);
+`;
+
+const TextArea = styled.textarea`
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  background-color: rgba(201, 198, 198, 0.5);
+  color: white;
+  border: none;
+  outline: none;
 `;

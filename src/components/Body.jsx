@@ -7,7 +7,7 @@ import styled from "styled-components";
 
 import code from "../images/code.png";
 import teams from "../images/puzzle.png";
-import goal from "../images/goal.svg";
+import goal from "../images/adaptable.png";
 
 function Body() {
   return (
@@ -28,7 +28,7 @@ function Body() {
         <Card>
           <Icons src={goal} height={80} alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
-
+<br/>
           <p>
             I am focused on meeting all deliverables while maintaining
             reliability and meeting customer's expectations.
@@ -87,7 +87,8 @@ const BodyHeading = styled.div`
   width: 100%;
 `;
 
-const Card = styled.div`display:flex;
+const Card = styled.div`
+display:flex;
 flex-direction:column;
 justify-content:center;
 align-items:center;
@@ -110,7 +111,7 @@ const CardTiltle = styled.h4`
 
 const Icons = styled.img`
   width: 80px;
-  margin-bottom: 10px;
+
 `;
 
 const Button = styled.button`
