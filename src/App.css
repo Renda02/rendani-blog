@@ -70,3 +70,10 @@ textarea::placeholder {
   cursor: pointer;
 }
 
+a:hover{
+  transition: .5s;
+  background-color: #e39aa4;
+  border: 1px solid #e39aa4;
+  color: #fff !important;
+  text-decoration: none;
+}

@@ -1,82 +1,56 @@
 import styled from "styled-components";
 import { ExternalLink } from "react-external-link";
-import avatar from "../images/html.jpg";
-
-
+import forecast from "../images/forecast.jpeg";
+import { SiNetlify } from "react-icons/si";
+import { AiFillGithub } from "react-icons/ai";
 
 function BottomSection() {
   return (
     <Wrapper>
       <Heading>
-        <h2>My most recent adventures</h2>
+        <h2> My most recent projects</h2>
         <p>
-          Get to know projects I've worked with and what technologies I've used.{" "}
+          Get to know the latest projects I've worked with and what technologies
+          I've used building each one of them.
         </p>
       </Heading>
-      <Project>
-        <Card>
-          <Image src={avatar} alt="project 1" className="card<Image" />
-          <CardHeading>Project 1</CardHeading>
-          <p>
-            Simple weather app created using HTML,CSS,Bootstrap and JS. I use
-            the Open Weather Map API to fetch data.
-          </p>
-          <DemoLink>
-            <ExternalLink href="https://github.com/Renda02/Vanilla-Weather-App">
-              <Span href="/">Source Code </Span>
-            </ExternalLink>
-            <ExternalLink href="https://thirsty-albattani-e7ad76.netlify.app/">
-              <Span href="/">Live Demo</Span>
-            </ExternalLink>
-          </DemoLink>
-        </Card>
-        <Card>
-          <Image src={avatar} alt="project 1" className="card<Image" />
-          <CardHeading>Project 2</CardHeading>
-          <p>
-            A React Weather App that display weather for next 5 hours and
-            fetched data using Open Weather API.
-          </p>
-          <DemoLink>
-            <ExternalLink href="https://github.com/Renda02/weather-react">
-              <Span>Source Code </Span>
-            </ExternalLink>
-            <ExternalLink href="https://heuristic-kilby-a7fe7c.netlify.app/">
-              <Span>Live Demo</Span>
-            </ExternalLink>
-          </DemoLink>
-        </Card>
-        <Card>
-          <Image src={avatar} alt="project 3" className="card<Image" />
-          <CardHeading>Project 3</CardHeading>
-          <p>
-            Covid Tracker that is mobile-friendly that was built using React and
-            Material UI. I fetch data from disease.sh - Open Disease Data daily
-            data
-          </p>
-          <DemoLink>
-            <ExternalLink href="https://github.com/Renda02/COVID-Tracker">
-              <Span>Source Code </Span>
-            </ExternalLink>
-            <ExternalLink href="https://infallible-jackson-4be24d.netlify.app/">
-              <Span>Live Demo</Span>
-            </ExternalLink>
-          </DemoLink>
-        </Card>
-      </Project>
+      <Main>
+        <div className="blog-post-img">
+          <Image src={forecast} alt="tree" />
+        </div>
+        <Info>
+          <Title>
+            <h2>Weather App</h2>
+          </Title>
+
+          <div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <ButtonWrap>
+            <ReadMore href="/">Demo</ReadMore>
+
+            <ReadMore href="/">Source Code</ReadMore>
+          </ButtonWrap>
+        </Info>
+      </Main>
+      
     </Wrapper>
   );
 }
 
 export default BottomSection;
 
-
 const Wrapper = styled.div`
   max-width: 1080px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   font-size: 20px;
   color: #000000;
   padding-top: 1rem;
@@ -84,48 +58,50 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
+const Main = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Heading = styled.div`
   font-size: 20px;
-padding:20px 0;
-  
+  padding: 1rem 0;
 `;
 
-const Project = styled.div`
-  max-width: 1080px;
+const ButtonWrap = styled.div`
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 2px 16px;
+  padding:1rem 0;
 `;
 
-const Card = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-flex-basis:33%;
-padding:1rem;`;
+const Title = styled.div`
+  text-transform: uppercase;
+`;
 
 const Image = styled.img`
-  border: 5px;
-  margin: auto;
-  width:50%;
-  display:flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  object-fit: cover;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
 `;
 
-const CardHeading = styled.h4`
-  font-size: 20px;
-  line-height:2rem;
-  text-align: center;
+const Info = styled.div`
+  flex: 2;
+  padding: 2rem;
 `;
 
-const DemoLink = styled.div`
- 
-  display: flex;
-  justify-content: space-between;
+const ReadMore = styled.a`
+  cursor: pointer;
+  text-decoration: none;
+  font-style: normal;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #e39aa4;
+  color: #e39aa4;
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
 `;
-
-const Span = styled.span`
-padding:5px;
-line-height:10px;
-margin:5px;`;
-

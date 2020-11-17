@@ -26,7 +26,7 @@ function Body() {
       </BodyHeading>
       <BodyRow>
         <Card>
-          <Icons src={goal} height={80} alt="tarrget" />
+          <Icons src={goal}  alt="tarrget" />
           <CardTiltle>Goal Oriented</CardTiltle>
 <br/>
           <p>
@@ -110,7 +110,10 @@ const CardTiltle = styled.h4`
 `;
 
 const Icons = styled.img`
-  width: 80px;
+  width: 150px;
+  border-radius:6px;
+  margin:0.5rem 0;
+  height:auto;
 
 `;
 
