@@ -8,12 +8,12 @@ function Contact() {
       <FormWrapper>
         <div>
           <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="text" placeholder="Last Name" />
+            <Input type="text" placeholder="Your Name" required />
+            <Input type="text" placeholder="Last Name" />
             <br />
-            <input type="Email" placeholder="Email" required />
+            <Input type="Email" placeholder="Email" required />
             <br />
-            <input type="text" placeholder="Subject of this message" />
+            <Input type="text" placeholder="Subject of this message" />
             <br />
             <TextArea
               name="message"
@@ -71,11 +71,22 @@ const Submit = styled.button`
   cursor: pointer;
   letter-spacing: 2px;
   margin-left: 3%;
-  border: 7px solid rgb(190, 190, 190);
+  border-radius: 7px;
+  border: 1px solid rgb(190, 190, 190);
   color: rgb(190, 190, 190);
 `;
 
 const TextArea = styled.textarea`
+  padding: 10px;
+  margin: 10px;
+  width: 90%;
+  background-color: rgba(201, 198, 198, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+`;
+
+const Input = styled.input`
   padding: 10px;
   margin: 10px;
   width: 90%;

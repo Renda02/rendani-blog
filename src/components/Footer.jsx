@@ -64,6 +64,7 @@ const Main = styled.div`
   width: 100%;
   align-items: center;
   background: #000000;
+  padding-bottom:1rem;
  
 `;
 
@@ -72,6 +73,7 @@ const Cointaner = styled.div`
   justify-content: space-around;
   max-width: 1080px;
   width: 100%;
+
 `;
 
 const FooterColumn = styled.div`
@@ -92,6 +94,8 @@ const Paragraph = styled.p`
 
 const SocialLink = styled.ul`
   display: flex;
+  flex-direction:flex-start;
+  padding:1rem 1rem 1rem 0;
 `;
 
 const SubFooter = styled.div`

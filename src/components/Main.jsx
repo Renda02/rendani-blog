@@ -1,3 +1,4 @@
+import { ExternalLink } from "react-external-link";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
@@ -13,7 +14,11 @@ function Main() {
           following content that insipire me and networking.
         </p>
       </Heading>
-      <h4>Check out my GitHub Calendar:</h4>
+      
+        <ExternalLink href="https://github.com/Renda02">
+          <Link>Check out my Git Contributions:</Link>
+        </ExternalLink>
+   
       <Calendar>
         <GitHubCalendar
           username="renda02"
@@ -32,24 +37,28 @@ export default Main;
 
 // hoisting
 
-const Container = styled.div`  width: 100%;
+const Container = styled.div`
+  width: 100%;
   max-width: 1080px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
-
 `;
 
 const Heading = styled.div`
   font-size: 20px;
-  padding: 20px 0;
+  padding: 1rem 0;
 `;
 
 const Calendar = styled.div`
   margin: auto;
   padding: 20px;
   text-align: center;
+`;
+
+const Link = styled.h4`
+  color: #000;
 `;
 
 const themeColor = {
