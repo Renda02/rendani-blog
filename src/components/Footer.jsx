@@ -11,46 +11,45 @@ import styled from "styled-components";
 function Footer() {
   return (
     <Main>
-      <Cointaner>
+      <Container>
         <FooterColumn>
           <SectionTitle>Rendani Luvhengo</SectionTitle>
           <Paragraph>Welcome to my personal website. </Paragraph>
         </FooterColumn>
         <FooterColumn>
           <SectionTitle>Links</SectionTitle>
-          <div></div>
         </FooterColumn>
         <FooterColumn>
           <SectionTitle>Follow Rendani</SectionTitle>
-          <div className="footer__follow">
-            <SocialLink>
-              <Links>
-                <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                  <AiFillMail size={30} fill="#fff" />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
-                  <AiFillLinkedin size={30} fill="#fff" />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://github.com/Renda02">
-                  <AiFillGithub size={30} fill="#fff" />
-                </ExternalLink>
-              </Links>
-              <Links>
-                <ExternalLink href="https://twitter.com/rendani18824096/">
-                  <AiFillTwitterCircle size={30} fill="#ababab" />
-                </ExternalLink>
-              </Links>
-            </SocialLink>
-          </div>
+          <SocialLink>
+            <Links>
+              <ExternalLink href=" mailto:rluvhengo2@gmail.com">
+                <AiFillMail size={30} fill="#fff" />
+              </ExternalLink>
+            </Links>
+            <Links>
+              <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
+                <AiFillLinkedin size={30} fill="#fff" />
+              </ExternalLink>
+            </Links>
+            <Links>
+              <ExternalLink href="https://github.com/Renda02">
+                <AiFillGithub size={30} fill="#fff" />
+              </ExternalLink>
+            </Links>
+            <Links>
+              <ExternalLink href="https://twitter.com/rendani18824096/">
+                <AiFillTwitterCircle size={30} fill="#ababab" />
+              </ExternalLink>
+            </Links>
+          </SocialLink>
         </FooterColumn>
-      </Cointaner>
-      <SubFooter>
-        <Paragraph> Copyright @Rendani 2020</Paragraph>
-      </SubFooter>
+      </Container>
+      <Container>
+        <SubFooter>
+          <Paragraph> Copyright @Rendani 2020</Paragraph>
+        </SubFooter>
+      </Container>
     </Main>
   );
 }
@@ -64,24 +63,23 @@ const Main = styled.div`
   width: 100%;
   align-items: center;
   background: #000000;
-  padding-bottom:1rem;
- 
+  padding-bottom: 1rem;
 `;
 
-const Cointaner = styled.div`
+const Container = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
-
 `;
 
 const FooterColumn = styled.div`
-  width: calc(100% / 3);
+  flex-basis: 33%;
 `;
 
 const SectionTitle = styled.h3`
-  
   font-weight: 500;
   color: #e39aa4;
   padding-top: 15px;
@@ -94,16 +92,15 @@ const Paragraph = styled.p`
 
 const SocialLink = styled.ul`
   display: flex;
-  flex-direction:flex-start;
-  padding:1rem 1rem 1rem 0;
+  flex-direction: flex-start;
+  padding: 1rem 1rem 1rem 0;
 `;
 
 const SubFooter = styled.div`
-  padding: 10px;
+  padding: 1rem 0;
   display: flex;
   justify-content: flex-start;
-  background-color: #f4f3f5;
-  color: #000000;
+  color: #f4f3f5;
   font-size: 18px;
   font-weight: bold;
   line-height: 21px;

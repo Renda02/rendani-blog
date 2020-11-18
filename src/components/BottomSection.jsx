@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { ExternalLink } from "react-external-link";
+
 import forecast from "../images/forecast.jpeg";
-import { SiNetlify } from "react-icons/si";
-import { AiFillGithub } from "react-icons/ai";
+
 
 function BottomSection() {
   return (
@@ -32,13 +31,22 @@ function BottomSection() {
             </p>
           </div>
           <ButtonWrap>
-            <ReadMore href="/">Demo</ReadMore>
+            <ReadMore
+              href="https://heuristic-kilby-a7fe7c.netlify.app/"
+              target="_blank"
+            >
+              Demo
+            </ReadMore>
 
-            <ReadMore href="/">Source Code</ReadMore>
+            <ReadMore
+              href="https://github.com/Renda02/weather-react"
+              target="_blank"
+            >
+              Source Code
+            </ReadMore>
           </ButtonWrap>
         </Info>
       </Main>
-      
     </Wrapper>
   );
 }
@@ -101,7 +109,7 @@ const ReadMore = styled.a`
   border-radius: 0.3rem;
   padding: 0.5rem;
   background-color: #fff;
-  border: 1px solid #e39aa4;
-  color: #e39aa4;
+  border: 1px solid #ee5f5f;
+  color: #ee5f5f;
   box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
 `;

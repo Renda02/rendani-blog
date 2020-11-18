@@ -3,9 +3,7 @@
   margin: 0;
   padding: 0;
 }
-/*Footer*/
 
-/*NavBar*/
 
 .nav__list li a:hover {
   border-bottom: 2px solid #dd3435;
@@ -70,7 +68,7 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-a:hover{
+.ReadMore a:hover{
   transition: .5s;
   background-color: #e39aa4;
   border: 1px solid #e39aa4;

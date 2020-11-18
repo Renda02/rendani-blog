@@ -54,7 +54,7 @@ function Body() {
         </Card>
       </BodyRow>
       <Link to="/about">
-        <Button type="submit">Learn More</Button>
+        <ReadMore>Learn More</ReadMore>
       </Link>
       </>
       <Main />
@@ -117,14 +117,14 @@ const Icons = styled.img`
 
 `;
 
-const Button = styled.button`
-  background: #000;
-  border: none;
-  color: #fff;
-  outline: none;
-  font-size: 17px;
+const ReadMore = styled.a`
   cursor: pointer;
-  border-radius: 7px;
-  padding: 5px 10px;
-  transition: 0.3ms ease-ease-in-out;
+  text-decoration: none;
+  font-style: normal;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  background-color: #fff;
+  border: 1px solid #ee5f5f;
+  color: #ee5f5f;
+  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
 `;

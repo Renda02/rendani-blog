@@ -36,13 +36,11 @@ const NavBar = styled.div`
 
 const NavWrapper = styled.nav`
   width: 100%;
-  padding: 20px;
+  padding: 20px 0;
   background: #f4f3f5;
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
-  position: sticky;
-  top: 0px;
 `;
 
 const NavUl = styled.ul`
@@ -53,8 +51,7 @@ const NavList = styled.li`
   list-style: none;
   justify-content: center;
   align-items: center;
-  display: flex;
-  ;
+  display: flex; ;
 `;
 
 const NavLink = styled(Link)`
@@ -63,8 +60,13 @@ const NavLink = styled(Link)`
   color: #000;
   text-decoration: none;
   font-weight: 400;
-  margin-right: 20px;
+  padding: 10px;
+  text-align: center;
   transition: all 0.3s ease;
+  :hover {
+    background-color: ${props => props.theme.mainPink};
+    color: white;
+  }
 `;
 
 const Logo = styled.h4`

@@ -46,7 +46,7 @@ const Form = styled.form`
 const Heading = styled.h2`
   text-align: center;
   text-decoration: underline;
-  font-family: cooperboldbt;
+  /* font-family: cooperboldbt; */
   text-underline-position: under;
   color: #fff;
   letter-spacing: 2px;
@@ -61,7 +61,8 @@ const FormWrapper = styled.div`
 const Submit = styled.button`
   width: 40%;
   background: none;
-  padding: 4px;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
   outline: none;
   font-size: 13px;
   font-weight: bold;
@@ -71,10 +72,12 @@ const Submit = styled.button`
   cursor: pointer;
   letter-spacing: 2px;
   margin-left: 3%;
-  border-radius: 7px;
+
   border: 1px solid rgb(190, 190, 190);
   color: rgb(190, 190, 190);
 `;
+
+
 
 const TextArea = styled.textarea`
   padding: 10px;
