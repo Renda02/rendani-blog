@@ -4,6 +4,7 @@ import BottomSection from "./BottomSection";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { Button } from "./styled";
 
 import code from "../images/code.png";
 import teams from "../images/puzzle.png";
@@ -53,7 +54,7 @@ function Body() {
           </Card>
         </BodyRow>
         <Link to="/about">
-          <ReadMore>Learn More</ReadMore>
+          <Button>Learn More</Button>
         </Link>
       </>
       <Main />
@@ -118,14 +119,4 @@ const Icons = styled.img`
   height: auto;
 `;
 
-const ReadMore = styled.a`
-  cursor: pointer;
-  text-decoration: none;
-  font-style: normal;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-  background-color: #fff;
-  border: 1px solid #ee5f5f;
-  color: #ee5f5f;
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
-`;
+

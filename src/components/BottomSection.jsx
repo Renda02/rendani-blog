@@ -1,18 +1,19 @@
 import styled from "styled-components";
 
 import forecast from "../images/forecast.jpeg";
+import { Button,Heading, SubHeading} from "./styled";
 
 
 function BottomSection() {
   return (
     <Wrapper>
       <Heading>
-        <h2> My most recent projects</h2>
-        <p>
+         My most recent projects</Heading>
+        <SubHeading>
           Get to know the latest projects I've worked with and what technologies
           I've used building each one of them.
-        </p>
-      </Heading>
+        </SubHeading>
+      
       <Main>
         <div className="blog-post-img">
           <Image src={forecast} alt="tree" />
@@ -31,19 +32,19 @@ function BottomSection() {
             </p>
           </div>
           <ButtonWrap>
-            <ReadMore
+            <Button
               href="https://heuristic-kilby-a7fe7c.netlify.app/"
               target="_blank"
             >
               Demo
-            </ReadMore>
+            </Button>
 
-            <ReadMore
+            <Button
               href="https://github.com/Renda02/weather-react"
               target="_blank"
             >
               Source Code
-            </ReadMore>
+            </Button>
           </ButtonWrap>
         </Info>
       </Main>
@@ -73,10 +74,7 @@ const Main = styled.div`
   align-items: center;
 `;
 
-const Heading = styled.div`
-  font-size: 20px;
-  padding: 1rem 0;
-`;
+
 
 const ButtonWrap = styled.div`
   display: flex;
@@ -102,14 +100,3 @@ const Info = styled.div`
   padding: 2rem;
 `;
 
-const ReadMore = styled.a`
-  cursor: pointer;
-  text-decoration: none;
-  font-style: normal;
-  border-radius: 0.3rem;
-  padding: 0.5rem;
-  background-color: #fff;
-  border: 1px solid #ee5f5f;
-  color: #ee5f5f;
-  box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
-`;
