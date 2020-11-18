@@ -14,48 +14,47 @@ function Body() {
     <Container>
       <TopSection />
       <>
-      <BodyHeading>
-        <h2> Who am I?</h2>
-        <p>
-          {" "}
-          I come from manufacturing and construction industry where
-          quality-work,continuous improvement and meeting all customer's
-          requirements is a priority. But in the end, my fascination with tech
-          inspired me take the leap.{" "}
-        </p>
-      </BodyHeading>
-      <BodyRow>
-        <Card>
-          <Icons src={goal}  alt="tarrget" />
-          <CardTiltle>Goal Oriented</CardTiltle>
-<br/>
+        <BodyHeading>
+          <h2> Who am I?</h2>
           <p>
-            I am focused on meeting all deliverables while maintaining
-            reliability and meeting customer's expectations.
+            I come from manufacturing and construction industry where
+            quality-work,continuous improvement and meeting all customer's
+            requirements is a priority. But in the end, my fascination with tech
+            inspired me take the leap.{" "}
           </p>
-        </Card>
-        <Card>
-          <Icons src={code} alt="coding" />
-          <CardTiltle>I code,too</CardTiltle>
-          <br />
-          <p>
-            I love coding because it is fun and the sense of accomplishment when
-            solving a really complicated problem cannot be beat!
-          </p>
-        </Card>
-        <Card>
-          <Icons src={teams} alt="puzzle" />
-          <CardTiltle>Easily Adaptive</CardTiltle>
-          <br />
-          <p>
-            I thrive well in a rapid growing and progressive company that
-            encourange continous improvement.
-          </p>
-        </Card>
-      </BodyRow>
-      <Link to="/about">
-        <ReadMore>Learn More</ReadMore>
-      </Link>
+        </BodyHeading>
+        <BodyRow>
+          <Card>
+            <Icons src={goal} alt="tarrget" />
+            <CardTiltle>Goal Oriented</CardTiltle>
+            <br />
+            <p>
+              I am focused on meeting all deliverables while maintaining
+              reliability and meeting customer's expectations.
+            </p>
+          </Card>
+          <Card>
+            <Icons src={code} alt="coding" />
+            <CardTiltle>I code,too</CardTiltle>
+            <br />
+            <p>
+              I love coding because it is fun and the sense of accomplishment
+              when solving a really complicated problem cannot be beat!
+            </p>
+          </Card>
+          <Card>
+            <Icons src={teams} alt="puzzle" />
+            <CardTiltle>Easily Adaptive</CardTiltle>
+            <br />
+            <p>
+              I thrive well in a rapid growing and progressive company that
+              encourange continous improvement.
+            </p>
+          </Card>
+        </BodyRow>
+        <Link to="/about">
+          <ReadMore>Learn More</ReadMore>
+        </Link>
       </>
       <Main />
       <BottomSection />
@@ -72,7 +71,6 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 `;
 
 const BodyHeading = styled.div`
@@ -88,13 +86,16 @@ const BodyHeading = styled.div`
 `;
 
 const Card = styled.div`
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-flex-basis:33%;
-padding:1rem;
-transition:0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 100%;
+  padding: 1rem;
+  transition: 0.3s;
+  @media only screen and (min-width: 600px) {
+    flex-basis: 33%;
+  }
 `;
 
 const BodyRow = styled.div`
@@ -102,6 +103,7 @@ const BodyRow = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 2px 16px;
+  flex-wrap: wrap;
 `;
 
 const CardTiltle = styled.h4`
@@ -111,10 +113,9 @@ const CardTiltle = styled.h4`
 
 const Icons = styled.img`
   width: 150px;
-  border-radius:6px;
-  margin:0.5rem 0;
-  height:auto;
-
+  border-radius: 6px;
+  margin: 0.5rem 0;
+  height: auto;
 `;
 
 const ReadMore = styled.a`

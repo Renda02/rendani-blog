@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 function Contact() {
   return (
     <Form>
@@ -8,21 +7,23 @@ function Contact() {
       <FormWrapper>
         <div>
           <form>
-            <Input type="text" placeholder="Your Name" required />
-            <Input type="text" placeholder="Last Name" />
-            <br />
-            <Input type="Email" placeholder="Email" required />
-            <br />
-            <Input type="text" placeholder="Subject of this message" />
-            <br />
-            <TextArea
-              name="message"
-              placeholder="Message"
-              rows="5"
-              required
-            ></TextArea>
-            <br />
-            <Submit>Send Message</Submit>
+            <Row>
+              <Input type="text" placeholder="Your Name" required />
+              <Input type="text" placeholder="Last Name" />
+            </Row>
+            <Row>
+              <Input type="Email" placeholder="rluvhengo2@gmail.com" required />
+            </Row>
+            <Row>
+              <TextArea
+                name="message"
+                
+                placeholder="Message"
+                rows="5"
+                required
+              ></TextArea>
+            </Row>
+            <Submit>Submit</Submit>
           </form>
         </div>
       </FormWrapper>
@@ -31,6 +32,11 @@ function Contact() {
 }
 
 export default Contact;
+
+const Row = styled.div`
+  display: flex;
+  padding: 0.5rem 0;
+`;
 
 const Form = styled.form`
   width: 100%;
@@ -59,7 +65,6 @@ const FormWrapper = styled.div`
 `;
 
 const Submit = styled.button`
-  width: 40%;
   background: none;
   border-radius: 0.3rem;
   padding: 0.5rem;
@@ -72,27 +77,26 @@ const Submit = styled.button`
   cursor: pointer;
   letter-spacing: 2px;
   margin-left: 3%;
-
   border: 1px solid rgb(190, 190, 190);
   color: rgb(190, 190, 190);
 `;
 
-
-
 const TextArea = styled.textarea`
-  padding: 10px;
+  padding: 1rem;
   margin: 10px;
-  width: 90%;
+  width: 100%;
   background-color: rgba(201, 198, 198, 0.5);
   color: white;
   border: none;
+  border-radius: 6px;
   outline: none;
 `;
 
 const Input = styled.input`
-  padding: 10px;
+  padding: 1rem;
   margin: 10px;
-  width: 90%;
+  min-width: 150px;
+  border-radius: 6px;
   background-color: rgba(201, 198, 198, 0.5);
   color: white;
   border: none;
