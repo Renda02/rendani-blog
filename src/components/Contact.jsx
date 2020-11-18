@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Heading } from "./styled";
 
 function Contact() {
   return (
@@ -17,13 +18,12 @@ function Contact() {
             <Row>
               <TextArea
                 name="message"
-                
                 placeholder="Message"
                 rows="5"
                 required
               ></TextArea>
             </Row>
-            <Submit>Submit</Submit>
+            <Submit>Send Message</Submit>
           </form>
         </div>
       </FormWrapper>
@@ -47,16 +47,10 @@ const Form = styled.form`
   padding-top: 40px;
   padding-bottom: 40px;
   background: #333;
+  
 `;
 
-const Heading = styled.h2`
-  text-align: center;
-  text-decoration: underline;
-  /* font-family: cooperboldbt; */
-  text-underline-position: under;
-  color: #fff;
-  letter-spacing: 2px;
-`;
+
 
 const FormWrapper = styled.div`
   display: grid;

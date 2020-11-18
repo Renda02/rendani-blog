@@ -1,19 +1,18 @@
 import styled from "styled-components";
 
 import forecast from "../images/forecast.jpeg";
-import { Button,Heading, SubHeading} from "./styled";
+import { BodyHeading, Button,Heading, SubHeading} from "./styled";
 
 
 function BottomSection() {
   return (
     <Wrapper>
-      <Heading>
+      <BodyHeading> <Heading>
          My most recent projects</Heading>
         <SubHeading>
           Get to know the latest projects I've worked with and what technologies
           I've used building each one of them.
-        </SubHeading>
-      
+        </SubHeading></BodyHeading>
       <Main>
         <div className="blog-post-img">
           <Image src={forecast} alt="tree" />

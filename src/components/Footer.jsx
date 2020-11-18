@@ -65,6 +65,7 @@ const Main = styled.div`
   align-items: center;
   background: #000000;
   padding-bottom: 1rem;
+  flex-wrap:wrap;
 `;
 
 const FooterColumn = styled.div`

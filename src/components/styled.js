@@ -7,6 +7,7 @@ export const Container = styled.div`
   margin-right: auto;
   margin-left: auto;
   width: 100%;
+  padding:3rem 0;
 `;
 
 export const Button = styled.button`
@@ -34,9 +35,19 @@ export const Heading = styled.h2`
  
 `;
 
-export const SubHeading = styled.p`
-
+export const SubHeading = styled.h3`
   font-size: 19px;
   line-height: 1.7rem;
- 
+  color: #6c7080;
+  font-weight:500;
+`;
+
+export const BodyHeading = styled.div`
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding:1rem 0;
 `;

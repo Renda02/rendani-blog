@@ -2,18 +2,21 @@ import { ExternalLink } from "react-external-link";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
+import { BodyHeading, Heading,SubHeading } from "./styled";
 
 function Main() {
   return (
     <Container>
-      <Heading>
-        <h2> What have I been to</h2>
-        <p>
+      <BodyHeading>
+        <Heading>
+         What have I been to?</Heading>
+        <SubHeading>
           Now that I am pursuing web development as my career, I have never stop
           learning and improving my technical knowledge by getting into coding,
           following content that insipire me and networking.
-        </p>
-      </Heading>
+        </SubHeading></BodyHeading>
+      
+      
       
         <ExternalLink href="https://github.com/Renda02">
           <Link>Check out my Git Contributions:</Link>
@@ -46,10 +49,7 @@ const Container = styled.div`
   align-items: flex-start;
 `;
 
-const Heading = styled.div`
-  font-size: 20px;
-  padding: 1rem 0;
-`;
+
 
 const Calendar = styled.div`
   margin: auto;

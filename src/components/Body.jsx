@@ -4,7 +4,7 @@ import BottomSection from "./BottomSection";
 import Contact from "./Contact";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Button } from "./styled";
+import { Button,Heading,SubHeading,BodyHeading } from "./styled";
 
 import code from "../images/code.png";
 import teams from "../images/puzzle.png";
@@ -16,13 +16,13 @@ function Body() {
       <TopSection />
       <>
         <BodyHeading>
-          <h2> Who am I?</h2>
-          <p>
+          <Heading > Who am I?</Heading>
+          <SubHeading>
             I come from manufacturing and construction industry where
             quality-work,continuous improvement and meeting all customer's
             requirements is a priority. But in the end, my fascination with tech
             inspired me take the leap.{" "}
-          </p>
+          </SubHeading>
         </BodyHeading>
         <BodyRow>
           <Card>
@@ -74,17 +74,7 @@ const Container = styled.div`
   align-items: center;
 `;
 
-const BodyHeading = styled.div`
-  max-width: 1080px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 20px;
-  color: #000000;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  width: 100%;
-`;
+
 
 const Card = styled.div`
   display: flex;
