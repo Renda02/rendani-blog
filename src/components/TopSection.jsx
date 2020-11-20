@@ -36,6 +36,7 @@ const Row = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
+  padding:80px;
 `
 
 const IntroContainer = styled.div`

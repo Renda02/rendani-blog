@@ -1,35 +1,30 @@
 import styled from "styled-components";
 
-
 function Contact() {
   return (
-    
     <Wrapper>
       <Heading>Get in touch with me </Heading>
       <FormWrapper>
-        
-          <form>
-            <Row>
-              <Input type="text" placeholder="Your Name" required />
-              <Input type="text" placeholder="Last Name" />
-            </Row>
-            <Row>
-              <Inputt type="Email" placeholder="rluvhengo2@gmail.com" required />
-            </Row>
-            <Row>
-              <TextArea
-                name="message"
-                placeholder="Message"
-                rows="5"
-                required
-              ></TextArea>
-            </Row>
-            <Submit>Send Message</Submit>
-          </form>
-      
+        <form>
+          <Row>
+            <Input type="text" placeholder="Your Name" required />
+            <Input type="text" placeholder="Last Name" />
+          </Row>
+          <Row>
+            <Inputt type="Email" placeholder="rluvhengo2@gmail.com" required />
+          </Row>
+          <Row>
+            <TextArea
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></TextArea>
+          </Row>
+          <Submit>Send Message</Submit>
+        </form>
       </FormWrapper>
     </Wrapper>
-  
   );
 }
 
@@ -49,7 +44,6 @@ const Wrapper = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
   background: #333;
-  
 `;
 
 const Heading = styled.h2`
@@ -57,7 +51,6 @@ const Heading = styled.h2`
   font-size: 30px;
   font-weight: 700;
 `;
-
 
 const FormWrapper = styled.div`
   display: grid;
@@ -83,7 +76,7 @@ const Submit = styled.button`
   :hover {
     color: #000;
     background: #e39aa4;
-    border:none;
+    border: none;
   }
 `;
 
@@ -112,7 +105,7 @@ const Input = styled.input`
 const Inputt = styled.input`
   padding: 1rem;
   margin: 10px;
-  width:100%;
+  width: 100%;
   border-radius: 6px;
   background-color: rgba(201, 198, 198, 0.5);
   color: white;
