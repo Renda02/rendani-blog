@@ -7,6 +7,7 @@ import {
   AiFillMail,
 } from "react-icons/ai";
 import styled from "styled-components";
+import {Button} from "../../components/styled"
 
 function About() {
   return (
@@ -20,41 +21,41 @@ function About() {
               </ImageBox>
             </Shadow>
             <Heading>Rendani</Heading>
-            <h3>Front End Developer</h3>
+            <Title>Front End Developer</Title>
           </div>
-          <ul className="icons">
-            <li>
+          <Icons>
+            <IconsLi>
               <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                <AiFillMail size={30} />
+                <AiFillMail size={25} fill="#fff" />
               </ExternalLink>
-            </li>
-            <li>
+            </IconsLi>
+            <IconsLi>
               <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
-                <AiFillLinkedin size={30} />
+                <AiFillLinkedin size={25} fill="#fff" />
               </ExternalLink>
-            </li>
-            <li>
+            </IconsLi>
+            <IconsLi>
               {" "}
               <ExternalLink href="https://github.com/Renda02">
-                <AiFillGithub size={30} />
+                <AiFillGithub size={25} fill="#fff" />
               </ExternalLink>
-            </li>
-            <li>
+            </IconsLi>
+            <IconsLi>
               {" "}
               <ExternalLink href="https://twitter.com/rendani18824096/">
-                <AiFillTwitterCircle size={30} />
+                <AiFillTwitterCircle size={25} fill="#fff" />
               </ExternalLink>
-            </li>
-          </ul>
+            </IconsLi>
+          </Icons>
         </LeftContent>
       </AboutLeft>
-      <div className="about__right">
-        <h2>About Rendani</h2>
-        <div className="about__btn">
+      <AboutRight>
+        <Heading1>About Rendani</Heading1>
+        <ButtonBox>
           {" "}
-          <button>Resume</button>
-          <button>Contact Me</button>
-        </div>
+          <Button>Resume</Button>
+          <Button>Contact Me</Button>
+        </ButtonBox>
         <div className="para">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam
@@ -69,7 +70,7 @@ function About() {
             possimus, fuga veritatis modi exercitationem fugit!
           </p>
         </div>
-      </div>
+      </AboutRight>
     </AboutWrapper>
   );
 }
@@ -126,6 +127,7 @@ cursor:pointer;
   width:50px;
 height:7px;
 filter:blur(3px);
+-webkit-filter:blur(3px);
 opacity:0;
 transition:all 0.5s ease;
 }`;
@@ -136,3 +138,54 @@ const Heading = styled.h2`
   padding-bottom: 1rem;
   border-bottom: 2px solid #fff;
 `;
+
+const Title = styled.h3`
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing:5px;
+  margin-top:1.2rem;
+`;
+
+const Icons = styled.ul`
+background:#fff;
+display:flex;
+justify-content:center;
+padding:0.8rem 0;`;
+
+const IconsLi = styled.li`
+background:#f36a8d;
+color:#fff;
+width:40px;
+margin: 0 0.5rem;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:1.2rem;
+cursor: pointer;
+transition:all 0.5s ease-in-out;
+:hover{
+  background:#000;
+  color:#fff;
+}
+`;
+
+const AboutRight = styled.div`
+background:#fff;
+height:100vh;
+display:flex;
+align-items:center;
+flex-direction:column;
+justify-content:center;
+padding: 0 5rem;
+text-align:center;`;
+
+const Heading1 = styled.h2`
+text-align:center;
+font-weight:600;`;
+
+const ButtonBox = styled.div`
+display:flex;
+margin:2rem 0;
+`;
+
