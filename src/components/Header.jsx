@@ -65,8 +65,7 @@ const NavLink = styled(Link)`
   text-align: center;
   transition: all 0.3s ease;
   :hover {
-    background-color: ${(props) => props.theme.mainPink};
-    color: white;
+    border-bottom: 2px solid #dd3435;
   }
 `;
 

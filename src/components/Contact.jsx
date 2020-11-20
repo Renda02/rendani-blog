@@ -3,10 +3,11 @@ import styled from "styled-components";
 
 function Contact() {
   return (
-    <Form>
+    
+    <Wrapper>
       <Heading>Get in touch with me </Heading>
       <FormWrapper>
-        <div>
+        
           <form>
             <Row>
               <Input type="text" placeholder="Your Name" required />
@@ -25,9 +26,10 @@ function Contact() {
             </Row>
             <Submit>Send Message</Submit>
           </form>
-        </div>
+      
       </FormWrapper>
-    </Form>
+    </Wrapper>
+  
   );
 }
 
@@ -38,7 +40,7 @@ const Row = styled.div`
   padding: 0.5rem 0;
 `;
 
-const Form = styled.form`
+const Wrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
