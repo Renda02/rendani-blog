@@ -13,8 +13,9 @@ import goal from "../images/adaptable.png";
 function Body() {
   return (
     <Container>
+      
       <TopSection />
-      <>
+      <Row>
         <BodyHeading>
           <Heading > Who am I?</Heading>
           <SubHeading>
@@ -56,7 +57,7 @@ function Body() {
         <Link to="/about">
           <Button>Learn More</Button>
         </Link>
-      </>
+      </Row>
       <Main />
       <BottomSection />
       <Contact />
@@ -72,6 +73,18 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+`;
+
+const Row = styled.div`
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background: #f4f3f5;
+  width: 100%;
+  padding-bottom:2rem;
 `;
 
 

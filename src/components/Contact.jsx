@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Heading } from "./styled";
+
 
 function Contact() {
   return (
@@ -13,7 +13,7 @@ function Contact() {
               <Input type="text" placeholder="Last Name" />
             </Row>
             <Row>
-              <Input type="Email" placeholder="rluvhengo2@gmail.com" required />
+              <Inputt type="Email" placeholder="rluvhengo2@gmail.com" required />
             </Row>
             <Row>
               <TextArea
@@ -50,6 +50,11 @@ const Form = styled.form`
   
 `;
 
+const Heading = styled.h2`
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+`;
 
 
 const FormWrapper = styled.div`
@@ -73,6 +78,11 @@ const Submit = styled.button`
   margin-left: 3%;
   border: 1px solid rgb(190, 190, 190);
   color: rgb(190, 190, 190);
+  :hover {
+    color: #000;
+    background: #e39aa4;
+    border:none;
+  }
 `;
 
 const TextArea = styled.textarea`
@@ -90,6 +100,17 @@ const Input = styled.input`
   padding: 1rem;
   margin: 10px;
   min-width: 150px;
+  border-radius: 6px;
+  background-color: rgba(201, 198, 198, 0.5);
+  color: white;
+  border: none;
+  outline: none;
+`;
+
+const Inputt = styled.input`
+  padding: 1rem;
+  margin: 10px;
+  width:100%;
   border-radius: 6px;
   background-color: rgba(201, 198, 198, 0.5);
   color: white;
