@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
-import Footer from "./components/Footer";
+
 import About from "./components/pages/About";
 import Contacts from "./components/pages/Contacts";
 import Header from "./components/Header";
@@ -22,7 +22,7 @@ function App() {
         <Route path="/about" component={About} />
         <Route path="/contacts" component={Contacts} />
       </Switch>
-      <Footer />
+  
     </Router>
     </ThemeProvider>
   );

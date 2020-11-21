@@ -2,6 +2,7 @@ import TopSection from "./TopSection";
 import Main from "./Main";
 import BottomSection from "./BottomSection";
 import Contact from "./Contact";
+import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button,Heading,SubHeading,BodyHeading } from "./styled";
@@ -61,6 +62,7 @@ function Body() {
       <Main />
       <BottomSection />
       <Contact />
+      <Footer/>
     </Container>
   );
 }
