@@ -4,28 +4,26 @@ import styled from "styled-components";
 import avatar from "../images/image.JPG";
 import { Container } from "./styled";
 
-function TopSection() {
-  return (
-    <Container>
-      <Row>
-        <IntroContainer>
-          <About>
-            <Greetings>Hello, I am</Greetings>
-            <Name>Rendani Luvhengo</Name>
-            <Title>
-              <Typed
-                strings={["Front End Developer"]}
-                typeSpeed={30}
-                showCursor={false}
-              />
-            </Title>
-          </About>
-        </IntroContainer>
-        <Image src={avatar} alt="logo" />
-      </Row>
-    </Container>
-  );
-}
+const TopSection = () => (
+  <Container>
+    <Row>
+      <IntroContainer>
+        <About>
+          <Greetings>Hello, I am</Greetings>
+          <Name>Rendani Luvhengo</Name>
+          <Title>
+            <Typed
+              strings={["Front End Developer"]}
+              typeSpeed={30}
+              showCursor={false}
+            />
+          </Title>
+        </About>
+      </IntroContainer>
+      <Image src={avatar} alt="logo" />
+    </Row>
+  </Container>
+);
 
 export default TopSection;
 
@@ -36,8 +34,11 @@ const Row = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
-  padding:80px;
-`
+  padding: 0.5rem;
+  @media (min-width: 720px) {
+    padding: 80pxrem;
+  }
+`;
 
 const IntroContainer = styled.div`
   text-align: center;
@@ -62,9 +63,12 @@ const Name = styled.h1`
 const Image = styled.img`
   border: 5px;
   margin: auto;
-  max-width: 350px;
+  max-width: 300px;
   display: flex;
-  padding:2rem 0;
+  padding: 2rem 0;
+  @media (min-width: 720px) {
+    max-width: 350px;
+  }
 `;
 
 const Greetings = styled.span`
