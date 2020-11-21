@@ -5,8 +5,9 @@ import {
   AiFillLinkedin,
   AiFillMail,
 } from "react-icons/ai";
-
 import styled from "styled-components";
+
+import { Container } from "./styled";
 
 function Footer() {
   return (
@@ -64,15 +65,7 @@ const Main = styled.div`
   align-items: center;
   background: #000000;
   padding-bottom: 1rem;
-`;
-
-const Container = styled.div`
-  display: flex;
-  justify-content: space-between;
-  max-width: 1080px;
-  margin-right: auto;
-  margin-left: auto;
-  width: 100%;
+  flex-wrap: wrap;
 `;
 
 const FooterColumn = styled.div`

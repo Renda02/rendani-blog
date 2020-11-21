@@ -32,6 +32,7 @@ const NavBar = styled.div`
   display: flex;
   justify-content: center;
   background: #f4f3f5;
+  box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
 `;
 
 const NavWrapper = styled.nav`
@@ -64,8 +65,7 @@ const NavLink = styled(Link)`
   text-align: center;
   transition: all 0.3s ease;
   :hover {
-    background-color: ${props => props.theme.mainPink};
-    color: white;
+    border-bottom: 2px solid #dd3435;
   }
 `;
 

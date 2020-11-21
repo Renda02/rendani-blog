@@ -1,50 +1,51 @@
 import Typed from "react-typed";
-import avatar from "../images/image.JPG";
 import styled from "styled-components";
+
+import avatar from "../images/image.JPG";
+import { Container } from "./styled";
 
 function TopSection() {
   return (
-    <Body>
-      <IntroContainer>
-        <About>
-          <Greetings>Hello , I am</Greetings>
-          <Name>Rendani Luvhengo</Name>
-          <Title>
-            <Typed
-              strings={["Front End Developer"]}
-              typeSpeed={30}
-              showCursor={false}
-            />
-          </Title>
-        </About>
-      </IntroContainer>
-      <Image src={avatar} alt="logo" />
-    </Body>
+    <Container>
+      <Row>
+        <IntroContainer>
+          <About>
+            <Greetings>Hello, I am</Greetings>
+            <Name>Rendani Luvhengo</Name>
+            <Title>
+              <Typed
+                strings={["Front End Developer"]}
+                typeSpeed={30}
+                showCursor={false}
+              />
+            </Title>
+          </About>
+        </IntroContainer>
+        <Image src={avatar} alt="logo" />
+      </Row>
+    </Container>
   );
 }
 
 export default TopSection;
 
+const Row = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  padding:80px;
+`
+
 const IntroContainer = styled.div`
   text-align: center;
   line-height: 24px;
-  padding-top: 200px;
-  padding-bottom: 175px;
   display: flex-start;
 `;
 
-const Body = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  width: 1080px;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2rem 0;
-`;
-
 const Title = styled.p`
-  /* font-family: "Roboto", sans-serif; */
   color: #e39aa4;
   font-size: 40px;
   text-align: center;
@@ -63,6 +64,7 @@ const Image = styled.img`
   margin: auto;
   max-width: 350px;
   display: flex;
+  padding:2rem 0;
 `;
 
 const Greetings = styled.span`
