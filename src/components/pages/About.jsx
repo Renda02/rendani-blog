@@ -28,7 +28,7 @@ function About() {
           <Icons>
             <IconsLi>
               <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                <AiFillMail size={25} fill="#fff" />
+                <AiFillMail size={30} fill="#fff" />
               </ExternalLink>
             </IconsLi>
             <IconsLi>
@@ -39,13 +39,13 @@ function About() {
             <IconsLi>
               {" "}
               <ExternalLink href="https://github.com/Renda02">
-                <AiFillGithub size={25} fill="#fff" />
+                <AiFillGithub size={30} fill="#fff" />
               </ExternalLink>
             </IconsLi>
             <IconsLi>
               {" "}
               <ExternalLink href="https://twitter.com/rendani18824096/">
-                <AiFillTwitterCircle size={25} fill="#fff" />
+                <AiFillTwitterCircle size={30} fill="#fff" />
               </ExternalLink>
             </IconsLi>
           </Icons>
@@ -53,10 +53,7 @@ function About() {
       </AboutLeft>
       <AboutRight>
         <Heading1>About Rendani</Heading1>
-        <ButtonBox>
-          {" "}
-          <Button>Contact Me</Button>
-        </ButtonBox>
+       
         <div className="para">
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam
@@ -71,6 +68,10 @@ function About() {
             possimus, fuga veritatis modi exercitationem fugit!
           </Paragraph>
         </div>
+        <ButtonBox>
+          {" "}
+          <Button>Let's Chat</Button>
+        </ButtonBox>
       </AboutRight>
     </AboutWrapper>
   );
@@ -150,16 +151,17 @@ const Title = styled.h3`
 `;
 
 const Icons = styled.ul`
-  background: #fff;
+
   display: flex;
   justify-content: center;
   padding: 0.8rem 0;
 `;
 
 const IconsLi = styled.li`
-  background: #f36a8d;
+  width: 50px;
+  height: 50px;
   color: #fff;
-  width: 40px;
+
   margin: 0 0.5rem;
   border-radius: 50%;
   display: flex;
@@ -169,8 +171,7 @@ const IconsLi = styled.li`
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   :hover {
-    background: #000;
-    color: #fff;
+    background: #e39aa4;
   }
 `;
 
