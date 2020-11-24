@@ -77,10 +77,12 @@ const SectionTitle = styled.h3`
   color: #e39aa4;
   padding-top: 15px;
   padding-bottom: 15px;
+  font-size:18px;
 `;
 
 const Paragraph = styled.p`
   color: #ababab;
+  font-size:16px;
 `;
 
 const SocialLink = styled.ul`

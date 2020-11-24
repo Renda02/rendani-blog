@@ -1,18 +1,20 @@
+import { ExternalLink } from "react-external-link";
 import styled from "styled-components";
 
 import forecast from "../images/forecast.jpeg";
-import { BodyHeading, Button,Heading, SubHeading} from "./styled";
-
+import { BodyHeading, Button, Heading, SubHeading } from "./styled";
 
 function BottomSection() {
   return (
     <Wrapper>
-      <BodyHeading> <Heading>
-         My most recent projects</Heading>
+      <BodyHeading>
+        {" "}
+        <Heading>My most recent projects</Heading>
         <SubHeading>
           Get to know the latest projects I've worked with and what technologies
           I've used building each one of them.
-        </SubHeading></BodyHeading>
+        </SubHeading>
+      </BodyHeading>
       <Main>
         <div className="blog-post-img">
           <Image src={forecast} alt="tree" />
@@ -31,18 +33,24 @@ function BottomSection() {
             </p>
           </div>
           <ButtonWrap>
-            <Button
-              href="https://heuristic-kilby-a7fe7c.netlify.app/"
-              target="_blank"
-            >
-              Demo
+            <Button>
+              <ExternalLink
+                href="https://heuristic-kilby-a7fe7c.netlify.app/"
+                target="_blank"
+              >
+                {" "}
+                Demo
+              </ExternalLink>
             </Button>
 
-            <Button
-              href="https://github.com/Renda02/weather-react"
-              target="_blank"
-            >
-              Source Code
+            <Button>
+              <ExternalLink
+                href="https://github.com/Renda02/weather-react"
+                target="_blank"
+              >
+                {" "}
+                Source Code
+              </ExternalLink>
             </Button>
           </ButtonWrap>
         </Info>
@@ -68,18 +76,19 @@ const Wrapper = styled.div`
 
 const Main = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+   @media only screen and (min-width: 600px) {
+    flex-direction:row;}
 `;
-
-
 
 const ButtonWrap = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding:1rem 0;
+  padding: 1rem 0;
 `;
 
 const Title = styled.div`
@@ -98,4 +107,3 @@ const Info = styled.div`
   flex: 2;
   padding: 2rem;
 `;
-
