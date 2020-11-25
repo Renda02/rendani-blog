@@ -31,28 +31,28 @@ function Body() {
             <Icons src={goal} alt="tarrget" />
             <CardTiltle>Goal Oriented</CardTiltle>
             <br />
-            <p>
+            <Paragraph>
               I am focused on meeting all deliverables while maintaining
               reliability and meeting customer's expectations.
-            </p>
+            </Paragraph>
           </Card>
           <Card>
             <Icons src={code} alt="coding" />
             <CardTiltle>I code,too</CardTiltle>
             <br />
-            <p>
+            <Paragraph>
               I love coding because it is fun and the sense of accomplishment
               when solving a really complicated problem cannot be beat!
-            </p>
+            </Paragraph>
           </Card>
           <Card>
             <Icons src={teams} alt="puzzle" />
             <CardTiltle>Easily Adaptive</CardTiltle>
             <br />
-            <p>
+            <Paragraph>
               I thrive well in a rapid growing and progressive company that
               encourange continous improvement.
-            </p>
+            </Paragraph>
           </Card>
         </BodyRow>
         <Link to="/about">
@@ -102,6 +102,13 @@ const Card = styled.div`
   @media only screen and (min-width: 600px) {
     flex-basis: 33%;
   }
+`;
+
+
+const Paragraph = styled.p`
+  font-weight: 400;
+  padding: 0.5rem;
+  
 `;
 
 const BodyRow = styled.div`

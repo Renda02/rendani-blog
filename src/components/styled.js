@@ -20,6 +20,7 @@ export const Button = styled.button`
   border: 1px solid #ee5f5f;
   background-color: #ee5f5f;
   box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
+ 
   :hover {
     transition: 0.5s;
     background-color: #fff;
@@ -37,8 +38,8 @@ export const Heading = styled.h2`
 export const SubHeading = styled.h3`
   font-size: 19px;
   line-height: 1.7rem;
-  color: #6c7080;
-  font-weight: 300;
+  color: #6c7085;
+  font-weight: 400;
   text-align: center;
 `;
 
