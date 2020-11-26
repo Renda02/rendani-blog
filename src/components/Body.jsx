@@ -1,11 +1,11 @@
 import TopSection from "./TopSection";
-import Main from "./Main";
-import BottomSection from "./BottomSection";
+import Contributions from "./Contributions";
+import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Button,Heading,SubHeading,BodyHeading } from "./styled";
+import { Button, Heading, SubHeading, BodyHeading } from "./styled";
 
 import code from "../images/code.png";
 import teams from "../images/puzzle.png";
@@ -14,11 +14,10 @@ import goal from "../images/adaptable.png";
 function Body() {
   return (
     <Container>
-      
       <TopSection />
       <Row>
         <BodyHeading>
-          <Heading > Who am I?</Heading>
+          <Heading> Who am I?</Heading>
           <SubHeading>
             I come from manufacturing and construction industry where
             quality-work,continuous improvement and meeting all customer's
@@ -59,10 +58,11 @@ function Body() {
           <Button>Learn More</Button>
         </Link>
       </Row>
-      <Main />
-      <BottomSection />
+      <Projects />
+      <Contributions />
+
       <Contact />
-      <Footer/>
+      <Footer />
     </Container>
   );
 }
@@ -86,10 +86,8 @@ const Row = styled.div`
   align-items: center;
   background: #f4f3f5;
   width: 100%;
-  padding-bottom:2rem;
+  padding-bottom: 2rem;
 `;
-
-
 
 const Card = styled.div`
   display: flex;
@@ -104,11 +102,9 @@ const Card = styled.div`
   }
 `;
 
-
 const Paragraph = styled.p`
   font-weight: 400;
   padding: 0.5rem;
-  
 `;
 
 const BodyRow = styled.div`
@@ -130,5 +126,3 @@ const Icons = styled.img`
   margin: 0.5rem 0;
   height: auto;
 `;
-
-

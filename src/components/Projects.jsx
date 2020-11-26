@@ -4,7 +4,7 @@ import styled from "styled-components";
 import forecast from "../images/forecast.jpeg";
 import { BodyHeading, Button, Heading, SubHeading } from "./styled";
 
-function BottomSection() {
+function Projects() {
   return (
     <Wrapper>
       <BodyHeading>
@@ -59,7 +59,7 @@ function BottomSection() {
   );
 }
 
-export default BottomSection;
+export default Projects;
 
 const Wrapper = styled.div`
   max-width: 1080px;
@@ -80,8 +80,9 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-   @media only screen and (min-width: 600px) {
-    flex-direction:row;}
+  @media only screen and (min-width: 600px) {
+    flex-direction: row;
+  }
 `;
 
 const ButtonWrap = styled.div`

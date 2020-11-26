@@ -1,4 +1,6 @@
 import { ExternalLink } from "react-external-link";
+
+import Footer from "../Footer";
 import {
   AiFillGithub,
   AiFillTwitterCircle,
@@ -10,77 +12,86 @@ import { Button } from "../../components/styled";
 import "../../App.css";
 import avatar from "../../images/image.JPG";
 
-
 function About() {
   return (
-    <AboutWrapper className="main">
-      <AboutLeft className="about__left">
-        <LeftContent className="left__content">
-          <div>
-            <Shadow>
-              <ImageBox>
-                <Image src={avatar} alt="about" />
-              </ImageBox>
-            </Shadow>
-            <Heading>Rendani</Heading>
-            <Title>Front End Developer</Title>
+    <div>
+      <AboutWrapper className="main">
+        <AboutLeft className="about__left">
+          <LeftContent className="left__content">
+            <div>
+              <Shadow>
+                <ImageBox>
+                  <Image src={avatar} alt="about" />
+                </ImageBox>
+              </Shadow>
+              <Heading>Rendani</Heading>
+              <Title>Front End Developer</Title>
+            </div>
+            <Icons>
+              <IconsLi>
+                <ExternalLink href=" mailto:rluvhengo2@gmail.com">
+                  <AiFillMail size={30} fill="#fff" />
+                </ExternalLink>
+              </IconsLi>
+              <IconsLi>
+                <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
+                  <AiFillLinkedin size={25} fill="#fff" />
+                </ExternalLink>
+              </IconsLi>
+              <IconsLi>
+                {" "}
+                <ExternalLink href="https://github.com/Renda02">
+                  <AiFillGithub size={30} fill="#fff" />
+                </ExternalLink>
+              </IconsLi>
+              <IconsLi>
+                {" "}
+                <ExternalLink href="https://twitter.com/rendani18824096/">
+                  <AiFillTwitterCircle size={30} fill="#fff" />
+                </ExternalLink>
+              </IconsLi>
+            </Icons>
+          </LeftContent>
+        </AboutLeft>
+        <AboutRight>
+          <Heading1>About Rendani</Heading1>
+
+          <div className="para">
+            <Paragraph>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam
+              inventore error aperiam molestias harum quibusdam ipsa odit, rerum
+              qui magnam, neque beatae sapiente enim pariatur! Possimus maiores
+              reiciendis accusantium!
+            </Paragraph>
+            <Paragraph>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              accusamus nesciunt ullam, quaerat sint nisi asperiores explicabo
+              exercitationem repellendus quos dignissimos error odit. Nisi
+              possimus, fuga veritatis modi exercitationem fugit!
+            </Paragraph>
           </div>
-          <Icons>
-            <IconsLi>
-              <ExternalLink href=" mailto:rluvhengo2@gmail.com">
-                <AiFillMail size={30} fill="#fff" />
-              </ExternalLink>
-            </IconsLi>
-            <IconsLi>
-              <ExternalLink href="https://www.linkedin.com/in/rendani-luvhengo/">
-                <AiFillLinkedin size={25} fill="#fff" />
-              </ExternalLink>
-            </IconsLi>
-            <IconsLi>
-              {" "}
-              <ExternalLink href="https://github.com/Renda02">
-                <AiFillGithub size={30} fill="#fff" />
-              </ExternalLink>
-            </IconsLi>
-            <IconsLi>
-              {" "}
-              <ExternalLink href="https://twitter.com/rendani18824096/">
-                <AiFillTwitterCircle size={30} fill="#fff" />
-              </ExternalLink>
-            </IconsLi>
-          </Icons>
-        </LeftContent>
-      </AboutLeft>
-      <AboutRight>
-        <Heading1>About Rendani</Heading1>
-       
-        <div className="para">
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam
-            inventore error aperiam molestias harum quibusdam ipsa odit, rerum
-            qui magnam, neque beatae sapiente enim pariatur! Possimus maiores
-            reiciendis accusantium!
-          </Paragraph>
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-            accusamus nesciunt ullam, quaerat sint nisi asperiores explicabo
-            exercitationem repellendus quos dignissimos error odit. Nisi
-            possimus, fuga veritatis modi exercitationem fugit!
-          </Paragraph>
-        </div>
-        <ButtonBox>
-          {" "}
-          <Button>Let's Chat</Button>
-        </ButtonBox>
-      </AboutRight>
-    </AboutWrapper>
+          <ButtonBox>
+            {" "}
+            <Button>Let's Chat</Button>
+          </ButtonBox>
+        </AboutRight>
+      </AboutWrapper>
+      <Footer />
+    </div>
   );
 }
 
 export default About;
 
 const AboutWrapper = styled.div`
-  height: 100vh;
+  justify-content: center;
+
+  @media screen and (min-width: 992px) {
+    .main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 `;
 
 const AboutLeft = styled.div`
@@ -89,13 +100,24 @@ const AboutLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+
+  @media screen and (min-width: 992px) {
+    .about__left {
+      position: relative;
+    }
+  }
 `;
 
 const LeftContent = styled.div`
   background: #f49cbb;
   padding: 4rem 4rem 2.5rem 5rem;
   text-align: center;
+  @media screen and (min-width: 992px) {
+    .left__content {
+      position: absolute;
+      right: -50px;
+    }
+  }
 `;
 
 const Image = styled.img`
@@ -151,7 +173,6 @@ const Title = styled.h3`
 `;
 
 const Icons = styled.ul`
-
   display: flex;
   justify-content: center;
   padding: 0.8rem 0;
