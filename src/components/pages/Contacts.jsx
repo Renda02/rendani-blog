@@ -1,52 +1,42 @@
 import styled from "styled-components";
-import "../../App.css";
-import Footer from "../../components/Footer"
-
+import Footer from "../../components/Footer";
+import {Button} from "../../components/styled"
+import "../../App.css"
 
 
 function Contacts() {
-  return (<>
-    <Container >
-      <Wrapper>
-        <Text>Contact Me</Text>
-        <Form action="#">
-          <FormRow>
-            <InputData>
-              <input type="text" />
-              <InputLabel>First Name</InputLabel>
-            </InputData>
-            <InputData>
-              <input type="text" />
-              <InputLabel>Last Name</InputLabel>
-            </InputData>
-          </FormRow>
-          <FormRow>
-            <InputData>
-              <input type="text" />
-              <InputLabel>Email Adress</InputLabel>
-            </InputData>
-            <InputData>
-              <input type="text" />
-              <InputLabel>Contact Detail</InputLabel>
-            </InputData>
-          </FormRow>
-          <TextRow>
-            <div className="input__data ">
-              <textarea cols="30" rows="10"></textarea>
-              <InputLabel>Write your message</InputLabel>
-            </div>
-          </TextRow>
-          <div className="form__row submit">
-            <div className="input__data ">
-              <div className="inner"></div>
-              <input type="submit" value="Submit" />
-            </div>
-          </div>
-        </Form>
-      </Wrapper>
-      
-    </Container >
-    <Footer />
+  return (
+    <>
+      <Container>
+        <Wrapper>
+          <Text>Contact Me</Text>
+          
+            <Form>
+              <Row>
+                <Input type="text" placeholder="Your Name" required />
+                <Input type="text" placeholder="Last Name" />
+              </Row>
+              <Row>
+                <Inputt
+                  type="Email"
+                  placeholder="rluvhengo2@gmail.com"
+                  required
+                />
+              </Row>
+              <Row>
+                <TextArea
+                  name="message"
+                  placeholder="Write your message here"
+                  rows="5"
+                  required
+                ></TextArea>
+              </Row>
+              <Button>Send Message</Button>
+            </Form>
+         
+        </Wrapper>
+      </Container>
+      <Footer />
     </>
   );
 }
@@ -63,46 +53,80 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-background:#fff;
-max-width:800px;
-width:800px;
-box-shadow:0px 0px 10px rgba(0,0,0,0.5);
-padding:25px 40px 10px 40px;
-margin:50px;
-
-`;
-
-const Text = styled.div`
-font-size:35px;
-font-weight:600;
-text-align:center;
-color:pink;
-
+  background: #f4f3f5;
+  max-width: 1080px;
+  width: 1080px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  padding: 25px 40px 10px 40px;
+  margin: 50px;
+  border-radius:6px;
 `;
 
 const Form = styled.form`
-padding:30px 0 0 0;
+    padding: 30px 0 ;
 
 `;
 
-const FormRow = styled.div`
-display:flex;
-margin:32px 0;`;
 
-const InputData = styled.div`
-width:100%;
-height:40px;
-margin:0 20px;
-position:relative;
+const TextArea = styled.textarea`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+  font-size: 17px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  margin: 0.5rem;
+  border-radius: 6px;
+  padding:1rem;
+  ::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-family: Questrial, Helvetica, Arial, Lucida, sans-serif;
+  }
 `;
 
-const TextRow = styled.textarea`
-height:70px`;
+const Input = styled.input`
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: none;
+  margin: 0.5rem;
+  font-size: 17px;
+  padding: 1rem;
+  border-radius: 6px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  ::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-family: Questrial, Helvetica, Arial, Lucida, sans-serif;
+  }
+`;
 
-const InputLabel = styled.label`
-position:absolute;
-bottom:10px;
-font-size:16px;
-pointer-events:none;
+const Inputt = styled.input`
+  padding: 1rem;
 
+  width: 100%;
+  border-radius: 6px;
+  color: #000;
+  border: none;
+  outline: none;
+  margin: 0.5rem;
+  ::placeholder {
+    color: #000;
+    font-size: 20px;
+    font-family: Questrial, Helvetica, Arial, Lucida, sans-serif;
+  }
+`;
+
+
+const Row = styled.div`
+  display: flex;
+  padding: 0.5rem 0;
+`;
+
+const Text = styled.div`
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+  color: pink;
 `;

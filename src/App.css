@@ -21,14 +21,14 @@ textarea::placeholder {
   font-family: Questrial, Helvetica, Arial, Lucida, sans-serif;
 }
 
-
-
-input,textarea{
-  display:block;
-  height:100%;
-  width: 100%;
-  border:none;
-  font-size:17px;
-  border-bottom: 2px solid rgba(0,0,0,0.12);
-}
-
+@media screen and (min-width: 992px) {
+    .about__left {
+      position: relative;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    .main {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }

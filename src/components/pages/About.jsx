@@ -101,11 +101,7 @@ const AboutLeft = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media screen and (min-width: 992px) {
-    .about__left {
-      position: relative;
-    }
-  }
+  
 `;
 
 const LeftContent = styled.div`
