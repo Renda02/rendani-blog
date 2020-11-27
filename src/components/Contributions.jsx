@@ -2,26 +2,25 @@ import { ExternalLink } from "react-external-link";
 import GitHubCalendar from "react-github-calendar";
 import ReactTooltip from "react-tooltip";
 import styled from "styled-components";
-import { BodyHeading, Heading,SubHeading } from "./styled";
+import { BodyHeading, Heading, SubHeading,Container } from "./styled";
 
-function Main() {
+function Contributions() {
   return (
     <Container>
+      <Main>
       <BodyHeading>
-        <Heading>
-         What have I been to?</Heading>
+        <Heading>What have I been to?</Heading>
         <SubHeading>
           Now that I am pursuing web development as my career, I have never stop
           learning and improving my technical knowledge by getting into coding,
           following content that insipire me and networking.
-        </SubHeading></BodyHeading>
-      
-      
-      
-        <ExternalLink href="https://github.com/Renda02">
-          <Link>Check out my Git Contributions:</Link>
-        </ExternalLink>
-   
+        </SubHeading>
+      </BodyHeading>
+
+      <ExternalLink href="https://github.com/Renda02">
+        <Link>Check out my Git Contributions:</Link>
+      </ExternalLink>
+
       <Calendar>
         <GitHubCalendar
           username="renda02"
@@ -32,24 +31,24 @@ function Main() {
           <ReactTooltip delayShow={50} html />
         </GitHubCalendar>
       </Calendar>
+      </Main>
     </Container>
   );
 }
 
-export default Main;
+export default Contributions;
 
 // hoisting
 
-const Container = styled.div`
+const Main = styled.div`
   width: 100%;
   max-width: 1080px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+  
 `;
-
-
 
 const Calendar = styled.div`
   margin: auto;
