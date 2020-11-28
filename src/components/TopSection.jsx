@@ -42,7 +42,7 @@ const Row = styled.div`
 
 const IntroContainer = styled.div`
   text-align: center;
-  line-height: 24px;
+ 
   display: flex-start;
 `;
 
@@ -55,9 +55,9 @@ const Title = styled.p`
 `;
 
 const Name = styled.h1`
-  font-size: 50px;
+  font-size: 2.6rem;
   font-weight: 400;
-  line-height: 70px;
+  line-height: 1.9;
 `;
 
 const Image = styled.img`
@@ -72,7 +72,7 @@ const Image = styled.img`
 `;
 
 const Greetings = styled.span`
-  font-size: 20px;
+ font-size:1.5rem;
   color: #000;
 `;
 
@@ -80,5 +80,5 @@ const About = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  line-height: 40px;
+ justify-content:center;
 `;

@@ -31,16 +31,20 @@ export const Button = styled.button`
 
 export const Heading = styled.h2`
   color: #060930;
-  font-size: 40px;
-  font-weight: 700;
+ 
+  font-weight: 800;
+  line-height:1.4;
+  font-size:2rem;
 `;
 
 export const SubHeading = styled.h3`
-  font-size: 19px;
-  line-height: 1.7rem;
+  
+  line-height: 1.28;
   color: #6c7085;
-  font-weight: 400;
+  font-weight: 450;
   text-align: center;
+  
+  font-size:1.3rem;
 `;
 
 export const BodyHeading = styled.div`
