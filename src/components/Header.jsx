@@ -57,7 +57,7 @@ const NavList = styled.li`
 
 const NavLink = styled(Link)`
   font-size: 18px;
-  line-height: 23px;
+  
   color: #000;
   text-decoration: none;
   font-weight: 400;

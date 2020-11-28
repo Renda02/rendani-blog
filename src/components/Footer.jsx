@@ -98,7 +98,7 @@ const SubFooter = styled.div`
   color: #f4f3f5;
   font-size: 18px;
   font-weight: bold;
-  line-height: 21px;
+  
   width: 100%;
 `;
 
