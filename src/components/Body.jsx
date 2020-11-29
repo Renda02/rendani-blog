@@ -19,16 +19,13 @@ function Body() {
         <BodyHeading>
           <Heading> Who am I?</Heading>
           <SubHeading>
-            I come from manufacturing and construction industry where
-            quality-work,continuous improvement and meeting all customer's
-            requirements is a priority. But in the end, my fascination with tech
-            inspired me take the leap.{" "}
+           I am a Frontend Developer based in Huelva,Spain who is focused on building scalable applications and websites.{" "}
           </SubHeading>
         </BodyHeading>
         <BodyRow>
           <Card>
             <Icons src={goal} alt="tarrget" />
-            <CardTiltle>Goal Oriented</CardTiltle>
+            <CardTiltle>Motivated</CardTiltle>
             <br />
             <Paragraph>
               I am focused on meeting all deliverables while maintaining
