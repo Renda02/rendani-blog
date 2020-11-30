@@ -24,7 +24,7 @@ function About() {
                   <Image src={avatar} alt="about" />
                 </ImageBox>
               </Shadow>
-              <Heading>Rendani</Heading>
+              <Heading>Rendani Luvhengo</Heading>
               <Title>Front End Developer</Title>
             </div>
             <Icons>
@@ -54,14 +54,14 @@ function About() {
           </LeftContent>
         </AboutLeft>
         <AboutRight>
-          <Heading1>About Rendani</Heading1>
+          <Heading1>About Me</Heading1>
 
           <div className="para">
             <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. In totam
-              inventore error aperiam molestias harum quibusdam ipsa odit, rerum
-              qui magnam, neque beatae sapiente enim pariatur! Possimus maiores
-              reiciendis accusantium!
+              I am a dedicated Frontend developer with an Quality Management
+              background, with a focus on the latest JavaScript stack, React is
+              my framework of choice.I am originally from South Africa and I am
+              currently based in Huelva,Spain.
             </Paragraph>
             <Paragraph>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
@@ -100,8 +100,6 @@ const AboutLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
-  
 `;
 
 const LeftContent = styled.div`
@@ -117,9 +115,10 @@ const LeftContent = styled.div`
 `;
 
 const Image = styled.img`
-  display: block;
+  display: flex;
   width: 200px;
   height: 200px;
+  
 `;
 
 const ImageBox = styled.div`

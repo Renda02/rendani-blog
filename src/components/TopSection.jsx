@@ -66,6 +66,7 @@ const Image = styled.img`
   max-width: 300px;
   display: flex;
   padding: 2rem 0;
+
   @media (min-width: 720px) {
     max-width: 350px;
   }
@@ -81,4 +82,5 @@ const About = styled.div`
   flex-direction: column;
   align-items: flex-start;
  justify-content:center;
+ 
 `;

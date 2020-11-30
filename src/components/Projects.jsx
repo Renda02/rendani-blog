@@ -38,7 +38,7 @@ function Projects() {
                 target="_blank"
               >
                 {" "}
-                Demo
+                Live Demo
               </ExternalLink>
             </Button>
 

@@ -1,8 +1,7 @@
 import styled from "styled-components";
 import Footer from "../../components/Footer";
-import {Button} from "../../components/styled"
-import "../../App.css"
-
+import { Button } from "../../components/styled";
+import "../../App.css";
 
 function Contacts() {
   return (
@@ -10,30 +9,29 @@ function Contacts() {
       <Container>
         <Wrapper>
           <Text>Contact Me</Text>
-          
-            <Form>
-              <Row>
-                <Input type="text" placeholder="Your Name" required />
-                <Input type="text" placeholder="Last Name" />
-              </Row>
-              <Row>
-                <Inputt
-                  type="Email"
-                  placeholder="rluvhengo2@gmail.com"
-                  required
-                />
-              </Row>
-              <Row>
-                <TextArea
-                  name="message"
-                  placeholder="Write your message here"
-                  rows="5"
-                  required
-                ></TextArea>
-              </Row>
-              <Button>Send Message</Button>
-            </Form>
-         
+
+          <Form>
+            <Row>
+              <Input type="text" placeholder="Your Name" required />
+              <Input type="text" placeholder="Last Name" />
+            </Row>
+            <Row>
+              <Inputt
+                type="Email"
+                placeholder="rluvhengo2@gmail.com"
+                required
+              />
+            </Row>
+            <Row>
+              <TextArea
+                name="message"
+                placeholder="Write your message here"
+                rows="5"
+                required
+              ></TextArea>
+            </Row>
+            <Button>Send Message</Button>
+          </Form>
         </Wrapper>
       </Container>
       <Footer />
@@ -59,14 +57,12 @@ const Wrapper = styled.div`
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   padding: 25px 40px 10px 40px;
   margin: 50px;
-  border-radius:6px;
+  border-radius: 6px;
 `;
 
 const Form = styled.form`
-    padding: 30px 0 ;
-
+  padding: 30px 0;
 `;
-
 
 const TextArea = styled.textarea`
   display: flex;
@@ -77,7 +73,7 @@ const TextArea = styled.textarea`
   border-bottom: 2px solid rgba(0, 0, 0, 0.12);
   margin: 0.5rem;
   border-radius: 6px;
-  padding:1rem;
+  padding: 1rem;
   ::placeholder {
     color: #000;
     font-size: 20px;
@@ -118,7 +114,6 @@ const Inputt = styled.input`
   }
 `;
 
-
 const Row = styled.div`
   display: flex;
   padding: 0.5rem 0;
@@ -128,5 +123,5 @@ const Text = styled.div`
   font-size: 35px;
   font-weight: 600;
   text-align: center;
-  color: pink;
+
 `;
