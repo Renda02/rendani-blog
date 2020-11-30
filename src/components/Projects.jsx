@@ -21,15 +21,14 @@ function Projects() {
         </div>
         <Info>
           <Title>
-            <h2>Weather App</h2>
+            <h2>Weatherly App</h2>
           </Title>
 
           <div>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              A real time react weather app that fetch real life data using
+              axios and display detailed forecast.It was built using React,
+              Bootstap and OpenWeatherAPI.
             </p>
           </div>
           <ButtonWrap>
@@ -39,7 +38,7 @@ function Projects() {
                 target="_blank"
               >
                 {" "}
-                Demo
+                Live Demo
               </ExternalLink>
             </Button>
 

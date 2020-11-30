@@ -19,10 +19,8 @@ function Body() {
         <BodyHeading>
           <Heading> Who am I?</Heading>
           <SubHeading>
-            I come from manufacturing and construction industry where
-            quality-work,continuous improvement and meeting all customer's
-            requirements is a priority. But in the end, my fascination with tech
-            inspired me take the leap.{" "}
+            I am a Frontend developer based in Huelva,Spain who is focused on
+            building scalable applications and websites.{" "}
           </SubHeading>
         </BodyHeading>
         <BodyRow>
@@ -31,17 +29,17 @@ function Body() {
             <CardTiltle>Goal Oriented</CardTiltle>
             <br />
             <Paragraph>
-              I am focused on meeting all deliverables while maintaining
-              reliability and meeting customer's expectations.
+              I am committed to continuous learning and staying up to date with
+              the latest technologies.
             </Paragraph>
           </Card>
           <Card>
             <Icons src={code} alt="coding" />
-            <CardTiltle>I code,too</CardTiltle>
+            <CardTiltle>Problem Solver</CardTiltle>
             <br />
             <Paragraph>
               I love coding because it is fun and the sense of accomplishment
-              when solving a really complicated problem cannot be beat!
+              when solving a really complicated problem cannot be beaten!
             </Paragraph>
           </Card>
           <Card>
