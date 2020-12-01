@@ -15,6 +15,7 @@ const TopSection = () => (
             <Typed
               strings={["Front End Developer"]}
               typeSpeed={30}
+              backSpeed={40}
               showCursor={false}
             />
           </Title>
@@ -42,22 +43,22 @@ const Row = styled.div`
 
 const IntroContainer = styled.div`
   text-align: center;
- 
+
   display: flex-start;
 `;
 
 const Title = styled.p`
   color: #e39aa4;
-  font-size: 40px;
+  font-size: 2.3rem;
   text-align: center;
   padding-bottom: auto;
   height: 70px;
+
 `;
 
 const Name = styled.h1`
   font-size: 2.6rem;
   font-weight: 400;
-  line-height: 1.9;
 `;
 
 const Image = styled.img`
@@ -73,7 +74,7 @@ const Image = styled.img`
 `;
 
 const Greetings = styled.span`
- font-size:1.5rem;
+  font-size: 1.5rem;
   color: #000;
 `;
 
@@ -81,6 +82,6 @@ const About = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
- justify-content:center;
- 
+  justify-content: center;
+  flex-wrap: wrap;
 `;
