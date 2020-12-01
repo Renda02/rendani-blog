@@ -20,7 +20,7 @@ export const Button = styled.button`
   border: 1px solid #ee5f5f;
   background-color: #ee5f5f;
   box-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.25);
- 
+
   :hover {
     transition: 0.5s;
     background-color: #fff;
@@ -31,20 +31,18 @@ export const Button = styled.button`
 
 export const Heading = styled.h2`
   color: #060930;
- 
   font-weight: 800;
-  line-height:1.4;
-  font-size:2rem;
+  line-height: 1.4;
+  font-size: 2rem;
 `;
 
-export const SubHeading = styled.h3`
-  
-  line-height: 1.28;
+export const SubHeading = styled.p`
+  line-height: 1.2;
   color: #6c7085;
-  font-weight: 450;
+  font-weight: 300;
   text-align: center;
-  
-  font-size:1.3rem;
+
+  font-size: 1.2rem;
 `;
 
 export const BodyHeading = styled.div`
