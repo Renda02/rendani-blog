@@ -9,6 +9,9 @@ function Contacts() {
       <Container>
         <Wrapper>
           <Text>Contact Me</Text>
+          <Paragraph>
+            Is your business seeking a web presence or are looking to hire, let chat:
+          </Paragraph>
 
           <Form>
             <Row>
@@ -124,4 +127,10 @@ const Text = styled.div`
   font-weight: 600;
   text-align: center;
 
+`;
+
+const Paragraph = styled.p`
+  
+  font-weight: 400;
+  text-align: center;
 `;

@@ -70,6 +70,7 @@ const Image = styled.img`
 
   @media (min-width: 720px) {
     max-width: 350px;
+   
   }
 `;
 

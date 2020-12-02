@@ -59,15 +59,13 @@ function About() {
           <div className="para">
             <Paragraph>
               I am a dedicated Frontend developer with an Quality Management
-              background, with a focus on the latest JavaScript stack, React is
+              background.I am focused on the latest JavaScript stack, React is
               my framework of choice.I am originally from South Africa and I am
               currently based in Huelva,Spain.
             </Paragraph>
             <Paragraph>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              accusamus nesciunt ullam, quaerat sint nisi asperiores explicabo
-              exercitationem repellendus quos dignissimos error odit. Nisi
-              possimus, fuga veritatis modi exercitationem fugit!
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.With every line of code ,I strive to make beautiful responsive website. 
             </Paragraph>
           </div>
           <ButtonBox>
@@ -117,7 +115,7 @@ const LeftContent = styled.div`
 const Image = styled.img`
   display: flex;
   width: 200px;
-  height: 200px;
+transform:scale(1.1);
   
 `;
 
