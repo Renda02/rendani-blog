@@ -18,7 +18,9 @@ function Footer() {
           <Paragraph>Welcome to my personal website. </Paragraph>
         </FooterColumn>
         <FooterColumn>
-          <SectionTitle>Links</SectionTitle>
+          <SectionTitle>Explore</SectionTitle>
+          
+
         </FooterColumn>
         <FooterColumn>
           <SectionTitle>Follow Rendani</SectionTitle>

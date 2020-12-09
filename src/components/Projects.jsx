@@ -17,7 +17,7 @@ function Projects() {
       </BodyHeading>
       <Main>
         <div className="blog-post-img">
-          <Image src={forecast} alt="tree" />
+          <Image src={forecast} alt="weather" />
         </div>
         <Info>
           <Title>
@@ -54,6 +54,7 @@ function Projects() {
           </ButtonWrap>
         </Info>
       </Main>
+      
     </Wrapper>
   );
 }
