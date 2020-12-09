@@ -10,7 +10,7 @@ import {
 import styled from "styled-components";
 import { Button } from "../../components/styled";
 import "../../App.css";
-import avatar from "../../images/image.JPG";
+import avatar from "../../images/image1.png";
 
 function About() {
   return (
