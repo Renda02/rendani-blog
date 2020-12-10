@@ -1,14 +1,10 @@
 
 
-
-
-
 input::placeholder {
   color: white;
   font-size: 14px;
   
 }
-
 
 textarea::placeholder {
   color: white;
@@ -16,14 +12,3 @@ textarea::placeholder {
   
 }
 
-@media screen and (min-width: 992px) {
-    .about__left {
-      position: relative;
-    }
-  }
-  @media screen and (min-width: 992px) {
-    .main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
