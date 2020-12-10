@@ -1,8 +1,8 @@
 import Typed from "react-typed";
 import styled from "styled-components";
-
-import avatar from "../images/image1.png";
 import { Container } from "./styled";
+import avatar from "../images/image1.png";
+
 
 const TopSection = () => (
   <Container>

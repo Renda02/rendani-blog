@@ -14,7 +14,7 @@ import avatar from "../../images/image.jpg";
 
 function About() {
   return (
-    <div>
+    <>
       <AboutWrapper >
         <AboutLeft>
           <LeftContent>
@@ -71,12 +71,12 @@ function About() {
           </div>
           <ButtonBox>
             {" "}
-            <Button>Let's Chat</Button>
+            <Button >Let's Chat</Button>
           </ButtonBox>
         </AboutRight>
       </AboutWrapper>
       <Footer />
-    </div>
+    </>
   );
 }
 

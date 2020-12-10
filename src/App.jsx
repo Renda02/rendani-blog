@@ -4,11 +4,11 @@ import { ThemeProvider } from "styled-components";
 
 import About from "./components/pages/About";
 
-import NavBar from "./components/NavBar";
+import Home from "./components/Home";
 import Body from "./components/Body";
 import "./App.css";
 import Contacts from "./components/pages/Contacts";
-import Sidebar from "./components/Sidebar";
+
 
 const theme = {
   mainPink:"#E39AA4"
@@ -17,9 +17,8 @@ const theme = {
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <Sidebar/>
-      <NavBar />
+     <Router>
+       <Home />
       <Switch>
         <Route exact path="/" component={Body} />
         <Route path="/about" component={About} />

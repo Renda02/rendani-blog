@@ -1,16 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-import {FaBars} from "react-icons/fa"
+import { FaBars } from "react-icons/fa";
 
-
-function NavBar() {
+function NavBar({toggle}) {
   return (
     <Nav>
       <NavWrapper>
         <Logo to="/">Rendani </Logo>
-        <MobileIcon>
-          <FaBars/>
+        <MobileIcon onClick={toggle}>
+          <FaBars />
         </MobileIcon>
         <NavMenu>
           <NavItems>
@@ -21,7 +20,6 @@ function NavBar() {
           </NavItems>
           <NavItems>
             <NavLink to="/contact">Contact</NavLink>
-          
           </NavItems>
         </NavMenu>
       </NavWrapper>
@@ -49,18 +47,17 @@ const NavWrapper = styled.nav`
   display: flex;
   justify-content: space-between;
   max-width: 1080px;
-z-index:1;
+  z-index: 1;
 `;
 
 const NavMenu = styled.ul`
   display: flex;
-   list-style: none;
-   text-align:center;
-  
+  list-style: none;
+  text-align: center;
 
-   @media screen and (max-width:768px){
-     display:none;
-   }
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const NavItems = styled.li`
@@ -71,14 +68,14 @@ const NavItems = styled.li`
 
 const NavLink = styled(Link)`
   font-size: 18px;
-  
+
   color: #000;
   text-decoration: none;
   font-weight: 400;
   padding: 10px;
   text-align: center;
   transition: all 0.3s ease;
-  :hover {
+  &:hover {
     border-bottom: 2px solid #dd3435;
   }
 `;
@@ -88,25 +85,22 @@ const Logo = styled(Link)`
   cursor: pointer;
   margin-left: 20px;
   font-size: 1.8rem;
-  font-weight:bold;
+  font-weight: bold;
   display: flex;
   justify-self: flex-start;
   text-decoration: none;
 `;
 
 const MobileIcon = styled.div`
-display:none;
+  display: none;
 
-@media screen and (max-width:768px){
-  display:block;
-  position:absolute;
-  top:0;
-  right:0;
-  transform:translate(-100%,60%);
-  font-size:1.8rem;
-  cursor: pointer;
-}
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
 `;
-
-
-
