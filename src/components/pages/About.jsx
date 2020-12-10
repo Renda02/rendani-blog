@@ -10,14 +10,14 @@ import {
 import styled from "styled-components";
 import { Button } from "../../components/styled";
 import "../../App.css";
-import avatar from "../../images/image1.png";
+import avatar from "../../images/image.jpg";
 
 function About() {
   return (
-    <div>
-      <AboutWrapper className="main">
-        <AboutLeft className="about__left">
-          <LeftContent className="left__content">
+    <>
+      <AboutWrapper >
+        <AboutLeft>
+          <LeftContent>
             <div>
               <Shadow>
                 <ImageBox>
@@ -65,17 +65,18 @@ function About() {
             </Paragraph>
             <Paragraph>
               I like to code things from scratch, and enjoy bringing ideas to
-              life in the browser.With every line of code ,I strive to make beautiful responsive website. 
+              life in the browser.With every line of code ,I strive to make
+              beautiful responsive website.
             </Paragraph>
           </div>
           <ButtonBox>
             {" "}
-            <Button>Let's Chat</Button>
+            <Button >Let's Chat</Button>
           </ButtonBox>
         </AboutRight>
       </AboutWrapper>
       <Footer />
-    </div>
+    </>
   );
 }
 
@@ -85,10 +86,8 @@ const AboutWrapper = styled.div`
   justify-content: center;
 
   @media screen and (min-width: 992px) {
-    .main {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-    }
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 `;
 
@@ -98,6 +97,10 @@ const AboutLeft = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (min-width: 992px) {
+    position: relative;
+  }
 `;
 
 const LeftContent = styled.div`
@@ -115,8 +118,7 @@ const LeftContent = styled.div`
 const Image = styled.img`
   display: flex;
   width: 200px;
-transform:scale(1.1);
-  
+  transform: scale(1.1);
 `;
 
 const ImageBox = styled.div`

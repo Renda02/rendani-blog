@@ -1,13 +1,13 @@
 import Typed from "react-typed";
 import styled from "styled-components";
-
-import avatar from "../images/image1.png";
 import { Container } from "./styled";
+import avatar from "../images/image1.png";
+
 
 const TopSection = () => (
   <Container>
     <Row>
-      <IntroContainer>
+     
         <About>
           <Greetings>Hello, I am</Greetings>
           <Name>Rendani Luvhengo</Name>
@@ -20,7 +20,7 @@ const TopSection = () => (
             />
           </Title>
         </About>
-      </IntroContainer>
+     
       <Image src={avatar} alt="logo" />
     </Row>
   </Container>
@@ -41,11 +41,7 @@ const Row = styled.div`
   }
 `;
 
-const IntroContainer = styled.div`
-  text-align: center;
 
-  display: flex-start;
-`;
 
 const Title = styled.p`
   color: #e39aa4;
@@ -68,7 +64,7 @@ const Image = styled.img`
   display: flex;
   padding: 2rem 0;
 
-  @media (min-width: 720px) {
+  @media (min-width: 768px) {
     max-width: 350px;
    
   }
@@ -85,4 +81,6 @@ const About = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
+   
+  
 `;

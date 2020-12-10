@@ -50,7 +50,7 @@ function Footer() {
       </Container>
       <Container>
         <SubFooter>
-          <Paragraph> Copyright @Rendani 2020</Paragraph>
+          <Paragraph> Copyright @Rendani 2020 </Paragraph>
         </SubFooter>
       </Container>
     </Main>
@@ -66,7 +66,7 @@ const Main = styled.div`
   width: 100%;
   align-items: center;
   background: #000000;
-  padding-bottom: 1rem;
+  padding: 1rem;
   flex-wrap: wrap;
 `;
 
