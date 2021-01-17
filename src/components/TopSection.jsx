@@ -3,24 +3,22 @@ import styled from "styled-components";
 import { Container } from "./styled";
 import avatar from "../images/image.jpg";
 
-
 const TopSection = () => (
   <Container>
     <Row>
-     
-        <About>
-          <Greetings>Hello, I am</Greetings>
-          <Name>Rendani Luvhengo</Name>
-          <Title>
-            <Typed
-              strings={["Front End Developer"]}
-              typeSpeed={30}
-              backSpeed={40}
-              showCursor={false}
-            />
-          </Title>
-        </About>
-     
+      <About>
+        <Greetings>Hello, I am</Greetings>
+        <Name>Rendani Luvhengo</Name>
+        <Title>
+          <Typed
+            strings={["Frontend Developer"]}
+            typeSpeed={40}
+            backSpeed={40}
+            showCursor={false}
+          />
+        </Title>
+      </About>
+
       <Image src={avatar} alt="logo" />
     </Row>
   </Container>
@@ -35,26 +33,26 @@ const Row = styled.div`
   align-content: center;
   align-items: center;
   width: 100%;
+
   padding: 0.5rem;
   @media (min-width: 720px) {
     padding: 80pxrem;
   }
 `;
 
-
-
 const Title = styled.p`
-  color: #e39aa4;
-  font-size: 2.3rem;
+  color: #d35d6e;
+  font-size: 2.1rem;
   text-align: center;
   padding-bottom: auto;
   height: 70px;
 
+  font-family: Lucida, sans-serif;
 `;
 
 const Name = styled.h1`
-  font-size: 2.6rem;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: bold;
 `;
 
 const Image = styled.img`
@@ -66,7 +64,6 @@ const Image = styled.img`
 
   @media (min-width: 768px) {
     max-width: 350px;
-   
   }
 `;
 
@@ -81,6 +78,4 @@ const About = styled.div`
   align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
-   
-  
 `;

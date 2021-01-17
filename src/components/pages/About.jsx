@@ -54,7 +54,7 @@ function About() {
           </LeftContent>
         </AboutLeft>
         <AboutRight>
-          <Heading1>About Me</Heading1>
+          <Heading1>A little about me</Heading1>
 
           <div className="para">
             <Paragraph>

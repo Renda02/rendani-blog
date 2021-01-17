@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 
 
-import About from "./components/pages/About";
 
+import About from "./components/pages/About";
 import Home from "./components/Home";
 import Body from "./components/Body";
 import "./App.css";

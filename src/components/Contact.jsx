@@ -3,7 +3,7 @@ import styled from "styled-components";
 function Contact() {
   return (
     <Wrapper>
-      <Heading>Get in touch with me </Heading>
+      <Heading>Let's work together</Heading>
       <FormWrapper>
         <form>
           <Row>
@@ -41,7 +41,7 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem .5rem;
+  padding: 2rem 0.5rem;
 
   background: #333;
 `;

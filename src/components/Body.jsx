@@ -58,7 +58,6 @@ function Body() {
       </Row>
       <Projects />
       <Contributions />
-
       <Contact />
       <Footer />
     </Container>
