@@ -8,7 +8,7 @@ function Contacts() {
     <>
       <Container>
         <Wrapper>
-          <Text>Contact Me</Text>
+          <Text>Let's work together</Text>
           <Paragraph>
             Is your business seeking a web presence or are looking to hire, let chat:
           </Paragraph>
@@ -124,7 +124,7 @@ const Row = styled.div`
 
 const Text = styled.div`
   font-size: 35px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 
 `;

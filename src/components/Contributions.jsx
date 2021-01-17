@@ -12,8 +12,8 @@ function Contributions() {
         <Heading>What have I been to?</Heading>
         <SubHeading>
           Now that I am pursuing web development as my career, I have never stop
-          learning and improving my technical knowledge by getting into coding,
-          following content that insipire me and networking.
+          learning and improving my technical knowledge by getting building side projects,
+          and contributing on github.
         </SubHeading>
       </BodyHeading>
 
@@ -26,7 +26,7 @@ function Contributions() {
           username="renda02"
           theme={themeColor}
           fontSize={18}
-          fullYear={false}
+          
         >
           <ReactTooltip delayShow={50} html />
         </GitHubCalendar>

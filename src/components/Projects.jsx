@@ -4,7 +4,13 @@ import styled from "styled-components";
 import forecast from "../images/forecast.jpeg";
 import { BodyHeading, Button, Heading, SubHeading } from "./styled";
 
+
+
+
 function Projects() {
+
+
+
   return (
     <Wrapper>
       <BodyHeading>
@@ -15,6 +21,45 @@ function Projects() {
           I've used building each one of them.
         </SubHeading>
       </BodyHeading>
+      <Main>
+        <div className="blog-post-img">
+          <Image src={forecast} alt="weather" />
+        </div>
+        <Info>
+          <Title>
+            <h2>SASS Website</h2>
+          </Title>
+
+          <div>
+            <p>
+              A responsive website built using HTML,SASS and JavaScript with
+              smooth scroll and multiple pages.
+            </p>
+          </div>
+          <ButtonWrap>
+            <Button>
+              <ExternalLink
+                href="https://sass-website.netlify.app"
+                target="_blank"
+                
+              >
+                {" "}
+                Live Demo
+              </ExternalLink>
+            </Button>
+
+            <Button>
+              <ExternalLink
+                href="https://github.com/Renda02/sass-website"
+                target="_blank"
+              >
+                {" "}
+                Source Code
+              </ExternalLink>
+            </Button>
+          </ButtonWrap>
+        </Info>
+      </Main>
       <Main>
         <div className="blog-post-img">
           <Image src={forecast} alt="weather" />
@@ -36,6 +81,7 @@ function Projects() {
               <ExternalLink
                 href="https://heuristic-kilby-a7fe7c.netlify.app/"
                 target="_blank"
+                color="fff"
               >
                 {" "}
                 Live Demo
@@ -54,7 +100,6 @@ function Projects() {
           </ButtonWrap>
         </Info>
       </Main>
-      
     </Wrapper>
   );
 }
@@ -80,6 +125,7 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin:2rem;
   @media only screen and (min-width: 600px) {
     flex-direction: row;
   }
@@ -90,7 +136,10 @@ const ButtonWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 0;
+  
 `;
+
+
 
 const Title = styled.div`
   text-transform: uppercase;
@@ -108,3 +157,4 @@ const Info = styled.div`
   flex: 2;
   padding: 2rem;
 `;
+
