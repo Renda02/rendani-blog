@@ -1,76 +1,79 @@
-import React from 'react'
-import sass from "../images/sass-website.png";
-import forecast from "../images/forecast.jpeg";
+import React from "react";
+import { ExternalLink } from "react-external-link";
 
-function Project() {
-    return (
-      <div className="main">
-        <div className="item-list">
-          <div className="item">
-            <div className="img-main">
-              <img sr={sass} alt="sass-web" />
-            </div>
-            <div className="content">
-              <div className="content-head">
-                <div>
-                  <h2>Mobile-data Website</h2>
-                  <h5>Tech Used</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    nemo eius corrupti laborum, eum aliquid ducimus molestiae,
-                    quasi delectus ad exercitationem dignissimos? Debitis iusto
-                    repellat nobis eligendi labore? Ipsum, sint.
-                  </p>
-                  <button>Demo</button>
-                  <button>Code</button>
-                </div>
-                <div className="content-description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    nemo eius corrupti laborum, eum aliquid ducimus molestiae,
-                    quasi delectus ad exercitationem dignissimos? Debitis iusto
-                    repellat nobis eligendi labore? Ipsum, sint.
-                  </p>
-                  <button>Demo</button>
-                  <button>Code</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="item">
-            <div className="img-main">
-              <img sr={forecast} alt="sass-web" />
-            </div>
-            <div className="content">
-              <div className="content-head">
-                <div>
-                  <h2>Mobile-data Website</h2>
-                  <h5>Tech Used</h5>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    nemo eius corrupti laborum, eum aliquid ducimus molestiae,
-                    quasi delectus ad exercitationem dignissimos? Debitis iusto
-                    repellat nobis eligendi labore? Ipsum, sint.
-                  </p>
-                  <button>Demo</button>
-                  <button>Code</button>
-                </div>
-                <div className="content-description">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
-                    nemo eius corrupti laborum, eum aliquid ducimus molestiae,
-                    quasi delectus ad exercitationem dignissimos? Debitis iusto
-                    repellat nobis eligendi labore? Ipsum, sint.
-                  </p>
-                  <button>Demo</button>
-                  <button>Code</button>
-                </div>
-              </div>
-            </div>
-          </div>
+import styled from "styled-components";
+import { Button, Heading } from "./styled";
+
+
+function Project(props) {
+  return (
+    <StyledContainer>
+      <div >
+          <Image src={props.image} alt="weather" />
         </div>
+      <HeadingWrap>
+        <Heading>{props.title}</Heading>
+      </HeadingWrap>
+      <div>
+        <Description>{props.description}</Description>
+        
+        <Text>
+          <strong>Features:</strong>
+        </Text><hr />
+        <TextLinks>
+          <li>{props.tech}</li>
+          
+        </TextLinks>
       </div>
-    );
+      <ButtonContainer>
+        <Button>Live Demo</Button>
+        <Button>Source Code</Button>
+      </ButtonContainer>
+    </StyledContainer>
+  );
 }
 
-export default Project
+export default Project;
+
+const StyledContainer = styled.div`
+  border:  1px solid #000;
+  padding: 25px 12px 18px;
+  display:flex;
+  justify-content:center;
+  flex-direction:column;
+  
+  `;
+
+
+const HeadingWrap = styled.div`
+  margin: 6px 0;
+`;
+
+const Description = styled.p`
+  padding-top:8px ;
+  font-weight: 300;
+`
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.2rem 0;
+`;
+
+const Text = styled.h4`
+  font-size: 1rem;
+  font-weight: 500;
+  padding:1rem 0;
+`;
+
+const TextLinks = styled.ul`
+ padding:.8rem;
+`;
+
+const Image = styled.img`
+  
+  max-width:300px;
+  max-width:300px;
+  object-fit: cover;
+
+`;

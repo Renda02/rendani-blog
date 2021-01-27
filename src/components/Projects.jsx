@@ -1,13 +1,13 @@
-import { ExternalLink } from "react-external-link";
+
 import styled from "styled-components";
+import Project from "./Project"
 
-import forecast from "../images/forecast.jpeg";
-import { BodyHeading, Button, Heading, SubHeading } from "./styled";
-
-
+import { BodyHeading,  Heading, SubHeading } from "./styled";
 
 
-function Projects() {
+
+
+function Projects(props) {
 
 
 
@@ -21,85 +21,9 @@ function Projects() {
           I've used building each one of them.
         </SubHeading>
       </BodyHeading>
-      <Main>
-        <div className="blog-post-img">
-          <Image src={forecast} alt="weather" />
-        </div>
-        <Info>
-          <Title>
-            <h2>SASS Website</h2>
-          </Title>
-
-          <div>
-            <p>
-              A responsive website built using HTML,SASS and JavaScript with
-              smooth scroll and multiple pages.
-            </p>
-          </div>
-          <ButtonWrap>
-            <Button>
-              <ExternalLink
-                href="https://sass-website.netlify.app"
-                target="_blank"
-                
-              >
-                {" "}
-                Live Demo
-              </ExternalLink>
-            </Button>
-
-            <Button>
-              <ExternalLink
-                href="https://github.com/Renda02/sass-website"
-                target="_blank"
-              >
-                {" "}
-                Source Code
-              </ExternalLink>
-            </Button>
-          </ButtonWrap>
-        </Info>
-      </Main>
-      <Main>
-        <div className="blog-post-img">
-          <Image src={forecast} alt="weather" />
-        </div>
-        <Info>
-          <Title>
-            <h2>Weatherly App</h2>
-          </Title>
-
-          <div>
-            <p>
-              A real time react weather app that fetch real life data using
-              axios and display detailed forecast.It was built using React,
-              Bootstap and OpenWeatherAPI.
-            </p>
-          </div>
-          <ButtonWrap>
-            <Button>
-              <ExternalLink
-                href="https://heuristic-kilby-a7fe7c.netlify.app/"
-                target="_blank"
-                color="fff"
-              >
-                {" "}
-                Live Demo
-              </ExternalLink>
-            </Button>
-
-            <Button>
-              <ExternalLink
-                href="https://github.com/Renda02/weather-react"
-                target="_blank"
-              >
-                {" "}
-                Source Code
-              </ExternalLink>
-            </Button>
-          </ButtonWrap>
-        </Info>
-      </Main>
+      <Project
+      />
+      
     </Wrapper>
   );
 }
@@ -119,42 +43,7 @@ const Wrapper = styled.div`
   width: 100%;
 `;
 
-const Main = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin:2rem;
-  @media only screen and (min-width: 600px) {
-    flex-direction: row;
-  }
-`;
-
-const ButtonWrap = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 1rem 0;
-  
-`;
 
 
 
-const Title = styled.div`
-  text-transform: uppercase;
-`;
-
-const Image = styled.img`
-  width: 100%;
-  height: 100%;
-  border-radius: 0.3rem;
-  object-fit: cover;
-  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
-`;
-
-const Info = styled.div`
-  flex: 2;
-  padding: 2rem;
-`;
 
