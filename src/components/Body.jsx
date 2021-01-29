@@ -3,6 +3,7 @@ import Contributions from "./Contributions";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Footer from "./Footer";
+
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Button, Heading, SubHeading, BodyHeading } from "./styled";
@@ -57,6 +58,7 @@ function Body() {
         </Link>
       </Row>
       <Projects />
+
       <Contributions />
       <Contact />
       <Footer />

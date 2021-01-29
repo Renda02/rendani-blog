@@ -1,0 +1,27 @@
+[
+    {
+       
+        "title":"Evently", "id":1,
+        "image":"src/images/event.png",
+        "description":"Lorem xxsksmsk sdsfsc sdscsxs sdd",
+        "tech":"React.js with styled components,React-router "
+    },{
+        "id":2,
+        "title":"Sass Landing Page",
+        "image":"src/images/sass.png",
+        "description":"Simple Sasspage with smooth scroll",
+        "tech-used":"HTML,SASS,JS " 
+    },{
+    "id":3,
+    "title":"My Portfolio",
+    "image":"src/images/porfolio.png",
+    "description":"Lorem xxsksmsk sdsfsc sdscsxs sdd",
+    "tech":"React.js with styled components,React-router "
+},
+{
+    "id":4,
+    "title":"React Weather App",
+    "image":"src/images/weather-app.png",
+    "description":"Lorem xxsksmsk sdsfsc sdscsxs sdd",
+    "tech":"React.js with styled components, "
+}]

@@ -1,16 +1,11 @@
 import { ExternalLink } from "react-external-link";
 import styled from "styled-components";
-
-import forecast from "../images/forecast.jpeg";
-import { BodyHeading, Button, Heading, SubHeading } from "./styled";
-
-
-
+import sass from "../images/sass.png";
+import weatherly from "../images/weather-app.png";
+import evently from "../images/event.png";
+import { BodyHeading, Heading, SubHeading, Button } from "./styled";
 
 function Projects() {
-
-
-
   return (
     <Wrapper>
       <BodyHeading>
@@ -20,10 +15,46 @@ function Projects() {
           Get to know the latest projects I've worked with and what technologies
           I've used building each one of them.
         </SubHeading>
-      </BodyHeading>
+      </BodyHeading> <Main>
+        <div >
+          <Image src={evently} alt="weather" />
+        </div>
+        <Info>
+          <Title>
+            <h2>Event App</h2>
+          </Title>
+
+          <div>
+            <p>
+              A responsive website built using React, styled components and Node.js as Backend that isused to fetch data,add data and will be adding how a user can filter events using date or days.
+            </p>
+          </div>
+          <ButtonWrap>
+          
+              <ExternalLink
+                href="https://eventily-app.netlify.app"
+                target="_blank"
+              >
+                 <Button>
+                Live Demo </Button>
+              </ExternalLink>
+           
+
+            
+              <ExternalLink
+                href="https://github.com/Renda02/event-app"
+                target="_blank"
+              >
+                {" "}
+               <Button> Source Code</Button>
+              </ExternalLink>
+            
+          </ButtonWrap>
+        </Info>
+      </Main>
       <Main>
-        <div className="blog-post-img">
-          <Image src={forecast} alt="weather" />
+        <div >
+          <Image src={sass} alt="weather" />
         </div>
         <Info>
           <Title>
@@ -37,32 +68,33 @@ function Projects() {
             </p>
           </div>
           <ButtonWrap>
-            <Button>
+           
               <ExternalLink
                 href="https://sass-website.netlify.app"
+                target="_blank"
+              >
+                {" "}
+                 <Button>Live Demo   </Button>
+              </ExternalLink>
+         
+
+          
+              
+              <ExternalLink
+                href="https://github.com/Renda02/sass-website"
                 target="_blank"
                 
               >
                 {" "}
-                Live Demo
+                 <Button> Source Code </Button>
               </ExternalLink>
-            </Button>
-
-            <Button>
-              <ExternalLink
-                href="https://github.com/Renda02/sass-website"
-                target="_blank"
-              >
-                {" "}
-                Source Code
-              </ExternalLink>
-            </Button>
+           
           </ButtonWrap>
         </Info>
       </Main>
       <Main>
-        <div className="blog-post-img">
-          <Image src={forecast} alt="weather" />
+        <div >
+          <Image src={weatherly} alt="weather" />
         </div>
         <Info>
           <Title>
@@ -77,26 +109,26 @@ function Projects() {
             </p>
           </div>
           <ButtonWrap>
-            <Button>
+           
               <ExternalLink
                 href="https://heuristic-kilby-a7fe7c.netlify.app/"
                 target="_blank"
                 color="fff"
               >
                 {" "}
-                Live Demo
+                <Button> Live Demo </Button>
               </ExternalLink>
-            </Button>
+           
 
-            <Button>
+            
               <ExternalLink
                 href="https://github.com/Renda02/weather-react"
                 target="_blank"
-              >
+              ><Button>
                 {" "}
-                Source Code
+                Source Code </Button>
               </ExternalLink>
-            </Button>
+           
           </ButtonWrap>
         </Info>
       </Main>
@@ -125,7 +157,7 @@ const Main = styled.div`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin:2rem;
+  margin: 2rem;
   @media only screen and (min-width: 600px) {
     flex-direction: row;
   }
@@ -136,10 +168,7 @@ const ButtonWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 0;
-  
 `;
-
-
 
 const Title = styled.div`
   text-transform: uppercase;
@@ -157,4 +186,3 @@ const Info = styled.div`
   flex: 2;
   padding: 2rem;
 `;
-
