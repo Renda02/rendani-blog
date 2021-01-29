@@ -18,6 +18,7 @@ function NavBar({toggle}) {
           <NavItems>
             <NavLink to="/about">About</NavLink>
           </NavItems>
+        
           <NavItems>
             <NavLink to="/contact">Contact</NavLink>
           </NavItems>
