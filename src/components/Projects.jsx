@@ -158,9 +158,7 @@ const Main = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin: 2rem;
-  @media only screen and (min-width: 600px) {
-    flex-direction: row;
-  }
+  
 `;
 
 const ButtonWrap = styled.div`
@@ -168,6 +166,11 @@ const ButtonWrap = styled.div`
   flex-direction: row;
   justify-content: space-between;
   padding: 1rem 0;
+
+  @media screen and (max-width:720px){
+    flex-direction:column;
+justify-content:space-evenly;
+  }
 `;
 
 const Title = styled.div`

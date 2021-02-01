@@ -11,8 +11,8 @@ function Contributions() {
       <BodyHeading>
         <Heading>What have I been to?</Heading>
         <SubHeading>
-          Now that I am pursuing web development as my career, I have never stop
-          learning and improving my technical knowledge by getting building side projects,
+          I have never stop
+          learning and improving my technical knowledge I do that getting building side projects,
           and contributing on github.
         </SubHeading>
       </BodyHeading>
@@ -58,6 +58,9 @@ const Calendar = styled.div`
 
 const Link = styled.h4`
   color: #000;
+@media screen and (max-width:720px){
+  padding: 1rem;
+}
 `;
 
 const themeColor = {

@@ -35,8 +35,8 @@ const Row = styled.div`
   width: 100%;
 
   padding: 0.5rem;
-  @media (min-width: 720px) {
-    padding: 80pxrem;
+  @media screen and (max-width: 720px) {
+    padding: 3rem;
   }
 `;
 
@@ -48,6 +48,8 @@ const Title = styled.p`
   height: 70px;
 
   font-family: Lucida, sans-serif;
+
+
 `;
 
 const Name = styled.h1`
@@ -62,7 +64,7 @@ const Image = styled.img`
   display: flex;
   padding: 2rem 0;
 
-  @media (min-width: 768px) {
+  @media screen and (max-width: 768px) {
     max-width: 350px;
   }
 `;
