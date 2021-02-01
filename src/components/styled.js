@@ -27,6 +27,10 @@ export const Button = styled.button`
     color: #ee5f5f;
     text-decoration: none;
   }
+
+  @media screen and (max-width:720px){
+    margin:.3rem 0;
+  }
 `;
 
 export const Heading = styled.h2`
@@ -34,6 +38,10 @@ export const Heading = styled.h2`
   font-weight: 800;
   line-height: 1.4;
   font-size: 2rem;
+
+  @media screen and (max-width:760px){
+    padding: 0 .8rem;
+  }
 `;
 
 export const SubHeading = styled.p`
@@ -43,6 +51,10 @@ export const SubHeading = styled.p`
   text-align: center;
 
   font-size: 1.2rem;
+  @media screen and (max-width:760px){
+    padding: 0 .8rem;
+    text-align: center;
+  }
 `;
 
 export const BodyHeading = styled.div`

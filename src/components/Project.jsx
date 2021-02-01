@@ -58,6 +58,10 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: space-evenly;
   margin: 1.2rem 0;
+
+  @media screen and (max-width:760px){
+    flex-direction:column;
+  }
 `;
 
 const Text = styled.h4`
