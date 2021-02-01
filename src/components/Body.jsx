@@ -28,7 +28,7 @@ function Body() {
           <Card>
             <Icons src={goal} alt="tarrget" />
             <CardTiltle>Goal Oriented</CardTiltle>
-            <br />
+           
             <Paragraph>
               I am committed to continuous learning and staying up to date with
               the latest technologies.
@@ -37,7 +37,7 @@ function Body() {
           <Card>
             <Icons src={code} alt="coding" />
             <CardTiltle>Problem Solver</CardTiltle>
-            <br />
+            
             <Paragraph>
               I love coding because it is fun and the sense of accomplishment
               when solving a really complicated problem cannot be beaten!
@@ -46,7 +46,7 @@ function Body() {
           <Card>
             <Icons src={teams} alt="puzzle" />
             <CardTiltle>Easily Adaptive</CardTiltle>
-            <br />
+           
             <Paragraph>
               I thrive well in a rapid growing and progressive company that
               encourange continous improvement.
@@ -94,7 +94,7 @@ const Card = styled.div`
   justify-content: center;
   align-items: center;
   flex-basis: 100%;
-  padding: 1rem;
+  padding: .8rem;
   transition: 0.3s;
   @media only screen and (min-width: 600px) {
     flex-basis: 33%;
@@ -110,7 +110,7 @@ const BodyRow = styled.div`
   max-width: 1080px;
   display: flex;
   justify-content: space-between;
-  padding: 2px 16px;
+  padding: 0 1rem;
   flex-wrap: wrap;
 `;
 
@@ -122,6 +122,6 @@ const CardTiltle = styled.h4`
 const Icons = styled.img`
   width: 150px;
   border-radius: 6px;
-  margin: 0.5rem 0;
+  margin: 0.3rem 0;
   height: auto;
 `;
