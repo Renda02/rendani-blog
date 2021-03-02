@@ -51,7 +51,7 @@ const Main = styled.div`
 `;
 
 const Calendar = styled.div`
-  margin: auto;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
 `;

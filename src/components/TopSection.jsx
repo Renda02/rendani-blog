@@ -46,7 +46,6 @@ const Title = styled.p`
   text-align: center;
   padding-bottom: auto;
   height: 70px;
-
   font-family: Lucida, sans-serif;
 
 

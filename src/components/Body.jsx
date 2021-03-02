@@ -60,6 +60,7 @@ function Body() {
       <Projects />
 
       <Contributions />
+      
       <Contact />
       <Footer />
     </Container>
@@ -122,6 +123,6 @@ const CardTiltle = styled.h4`
 const Icons = styled.img`
   width: 150px;
   border-radius: 6px;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
   height: auto;
 `;
