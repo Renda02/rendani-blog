@@ -69,7 +69,6 @@ const NavItems = styled.li`
 
 const NavLink = styled(Link)`
   font-size: 18px;
-
   color: #000;
   text-decoration: none;
   font-weight: 400;

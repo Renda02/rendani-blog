@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 function Contact() {
+
+  
   return (
     <Wrapper>
       <Heading>Let's work together</Heading>
@@ -42,7 +44,6 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
   padding: 2rem 0.5rem;
-
   background: #333;
 `;
 
@@ -61,12 +62,12 @@ const FormWrapper = styled.div`
 const Submit = styled.button`
   background: none;
   border-radius: 0.3rem;
-  padding: 0.5rem;
+  padding: 1rem 2.5rem;
   outline: none;
   font-size: 13px;
   font-weight: bold;
   letter-spacing: 2px;
-  height: 33px;
+  
   text-align: center;
   cursor: pointer;
   letter-spacing: 2px;

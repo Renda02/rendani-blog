@@ -45,7 +45,7 @@ export const Heading = styled.h2`
 `;
 
 export const SubHeading = styled.p`
-  line-height: 1.2;
+  line-height: 1;
   color: #6c7085;
   font-weight: 300;
   text-align: center;

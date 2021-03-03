@@ -1,7 +1,7 @@
 import { ExternalLink } from "react-external-link";
 import styled from "styled-components";
 import sass from "../images/sass.png";
-import weatherly from "../images/weather-app.png";
+import weatherly from "../images/weatherly.png";
 import evently from "../images/event.png";
 import { BodyHeading, Heading, SubHeading, Button } from "./styled";
 
@@ -17,7 +17,7 @@ function Projects() {
         </SubHeading>
       </BodyHeading> <Main>
         <div >
-          <Image src={evently} alt="weather" />
+          <Imagely src={evently} alt="weather" />
         </div>
         <Info>
           <Title>
@@ -179,7 +179,17 @@ const Title = styled.div`
 
 const Image = styled.img`
   width: 100%;
-  height: 100%;
+  height: 70%;
+  border-radius: 0.3rem;
+  object-fit: cover;
+  max-height:400px;
+  box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
+`;
+
+const Imagely = styled.img`
+  width: 100%;
+  height: 350%;
+  max-height:400px;
   border-radius: 0.3rem;
   object-fit: cover;
   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.5);
