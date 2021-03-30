@@ -39,11 +39,12 @@ const Nav = styled.div`
   justify-content: center;
   background: #f4f3f5;
   box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.12);
+  margin: 0 auto;
 `;
 
 const NavWrapper = styled.nav`
   width: 100%;
-  padding: 20px 0;
+  padding: 2em 0;
   background: #f4f3f5;
   display: flex;
   justify-content: space-between;
@@ -54,7 +55,7 @@ const NavWrapper = styled.nav`
 const NavMenu = styled.ul`
   display: flex;
   list-style: none;
-  text-align: center;
+ padding:0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -64,7 +65,7 @@ const NavMenu = styled.ul`
 const NavItems = styled.li`
   justify-content: center;
   align-items: center;
-  display: flex; ;
+ 
 `;
 
 const NavLink = styled(Link)`
@@ -72,10 +73,11 @@ const NavLink = styled(Link)`
   color: #000;
   text-decoration: none;
   font-weight: 400;
-  padding: 10px;
+  padding: 1em;
   text-align: center;
   transition: all 0.3s ease;
-  &:hover {
+  &:hover , 
+  :focus{
     border-bottom: 2px solid #dd3435;
   }
 `;
@@ -85,7 +87,7 @@ const Logo = styled(Link)`
   cursor: pointer;
   margin-left: 20px;
   font-size: 1.8rem;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   justify-self: flex-start;
   text-decoration: none;
