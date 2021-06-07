@@ -68,6 +68,7 @@ const Main = styled.div`
   background: #000000;
   padding: 1rem;
   flex-wrap: wrap;
+  padding: 0 2em
 `;
 
 const FooterColumn = styled.div`

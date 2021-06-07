@@ -44,7 +44,7 @@ const Nav = styled.div`
 
 const NavWrapper = styled.nav`
   width: 100%;
-  padding: 2em 0;
+  padding: 1em 0;
   background: #f4f3f5;
   display: flex;
   justify-content: space-between;
@@ -56,6 +56,8 @@ const NavMenu = styled.ul`
   display: flex;
   list-style: none;
  padding:0;
+ font-weight: 400;
+ font-size:1.2rem;
 
   @media screen and (max-width: 768px) {
     display: none;
