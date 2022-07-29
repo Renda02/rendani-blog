@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FaBars } from "react-icons/fa";
 
-function NavBar({toggle}) {
+function NavBar({ toggle }) {
   return (
     <Nav>
       <NavWrapper>
@@ -18,7 +18,7 @@ function NavBar({toggle}) {
           <NavItems>
             <NavLink to="/about">About</NavLink>
           </NavItems>
-        
+
           <NavItems>
             <NavLink to="/contact">Contact</NavLink>
           </NavItems>
@@ -46,7 +46,7 @@ const NavWrapper = styled.nav`
   width: 100%;
   padding: 2em 0;
   background: #f4f3f5;
-  display: flex;
+  display:flex ;
   justify-content: space-between;
   max-width: 1080px;
   z-index: 1;
@@ -55,7 +55,7 @@ const NavWrapper = styled.nav`
 const NavMenu = styled.ul`
   display: flex;
   list-style: none;
- padding:0;
+  padding: 0;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -65,7 +65,6 @@ const NavMenu = styled.ul`
 const NavItems = styled.li`
   justify-content: center;
   align-items: center;
- 
 `;
 
 const NavLink = styled(Link)`
@@ -76,8 +75,7 @@ const NavLink = styled(Link)`
   padding: 1em;
   text-align: center;
   transition: all 0.3s ease;
-  &:hover , 
-  :focus{
+  &:hover {
     border-bottom: 2px solid #dd3435;
   }
 `;
@@ -101,7 +99,8 @@ const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 60%);
+    transform: translate(5%, 100%);
+
     font-size: 1.8rem;
     cursor: pointer;
   }

@@ -43,10 +43,11 @@ const Row = styled.div`
 const Title = styled.p`
   color: #d35d6e;
   font-size: 2.1rem;
-  text-align: center;
+ 
   padding-bottom: auto;
   height: 70px;
   font-family: Lucida, sans-serif;
+  margin: 0;
 
 
 `;
